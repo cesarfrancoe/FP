@@ -2,7 +2,7 @@
 
 **Descripción del problema:**
 
-Escribe un programa que permita al usuario adivinar un número entre 1 y 15 que es generado aleatoriamente por el computador. El usuario tendrá un máximo de **3 intentos** para adivinar el número.
+Escribe un algoritmo que permita al usuario adivinar un número entre 1 y 15 que es generado aleatoriamente por el computador. El usuario tendrá un máximo de **3 intentos** para adivinar el número.
 
 #### Reglas del juego:
 
