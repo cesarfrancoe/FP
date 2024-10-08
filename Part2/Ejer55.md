@@ -1,4 +1,4 @@
-### Problema 55: El Computador adivina un número
+### Problema 55: El computador adivina un número
 
 **Descripción del problema:**
 
