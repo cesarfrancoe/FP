@@ -2,7 +2,7 @@
 
 **Descripción del problema:**
 
-Escribe un programa en el que el computador trate de adivinar un número entre 1 y 15 que el usuario haya pensado. El computador tendrá un máximo de **3 intentos** para adivinar el número, y el usuario debe darle pistas indicando si el número que propone el computador es mayor o menor que el que ha pensado.
+Escribe un algoritmo en el que el computador trate de adivinar un número entre 1 y 15 que el usuario haya pensado. El computador tendrá un máximo de **3 intentos** para adivinar el número, y el usuario debe darle pistas indicando si el número que propone el computador es mayor o menor que el que ha pensado.
 
 #### Reglas del juego:
 
