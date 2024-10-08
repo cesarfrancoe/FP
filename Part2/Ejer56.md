@@ -1,4 +1,4 @@
-### Problema 56: Validación de Números de Tarjeta de Crédito
+### Problema 56: Validación de números de tarjeta de crédito
 
 **Descripción del problema:**
 
