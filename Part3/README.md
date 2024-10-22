@@ -108,7 +108,7 @@ En este caso, el ciclo se repetirá hasta que `i` sea mayor que 5.
 
 ---
 
-### **Resumen de las Variantes del Ciclo `Hacer...Repetir` en Seudocódigo:**
+### **Resumen:**
 
 1. **`Hacer...Repetir Mientras (condición)`**: Evalúa la condición al final; el ciclo se ejecuta al menos una vez y se repite mientras la condición sea verdadera.
 2. **`Hacer...Repetir Hasta (condición)`**: Evalúa la condición al final; el ciclo se ejecuta al menos una vez y se repite hasta que la condición se cumpla.
