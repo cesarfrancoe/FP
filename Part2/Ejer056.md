@@ -1,4 +1,4 @@
-### **Problema 56: Número mágico de 4 dígitos**
+### **Problema 056: Número mágico de 4 dígitos**
 
 **Descripción del problema:**
 
