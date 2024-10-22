@@ -1,4 +1,4 @@
-### **Problema 60: Ordenar tres números enteros**
+### **Problema 060: Ordenar tres números enteros**
 
 **Descripción del problema:**
 
