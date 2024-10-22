@@ -1,4 +1,4 @@
-### **Estructuras de Control Selectivas**
+# **Estructuras de Control Selectivas**
 
 Las **estructuras de control selectivas** permiten que un programa tome decisiones dependiendo de ciertas condiciones. Estas decisiones influyen en el flujo de ejecución, permitiendo ejecutar diferentes bloques de código según el resultado de las condiciones evaluadas.
 
