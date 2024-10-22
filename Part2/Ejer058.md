@@ -1,4 +1,4 @@
-### **Problema 58: Validación de Números de Tarjeta de Crédito**
+### **Problema 058: Validación de Números de Tarjeta de Crédito**
 
 **Descripción del problema:**
 
