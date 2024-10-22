@@ -1,4 +1,4 @@
-### Problema 54: El usuario adivina un número
+### Problema 054: El usuario adivina un número
 
 **Descripción del problema:**
 
