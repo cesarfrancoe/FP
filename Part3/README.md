@@ -1,114 +1,116 @@
 # **Estructuras de Control Iterativas**
 
-Las **estructuras de control iterativas** permiten que un bloque de código se ejecute repetidamente mientras se cumpla una condición o hasta que una condición se satisfaga. En este documento se unifican las variantes del ciclo iterativo bajo la estructura **"Hacer...Repetir"**.
-
-### **1. `Hacer...Repetir Mientras`**
-
-Esta estructura ejecuta un bloque de código **mientras** una condición sea verdadera. La condición se evalúa **después** de ejecutar el bloque de código, garantizando que el ciclo se ejecute al menos una vez.
-
-**Sintaxis en pseudocódigo:**
-
-```
-Hacer
-    // Instrucciones a ejecutar
-Repetir Mientras (condición)
-```
-
-**Ejemplo:**
-
-```
-i = 1
-Hacer
-    Escribir "El valor de i es: ", i
-    i = i + 1
-Repetir Mientras (i <= 5)
-```
-
-En este caso, el ciclo se ejecutará al menos una vez, y seguirá repitiendo mientras `i` sea menor o igual a 5.
+Las **estructuras de control iterativas** permiten que un bloque de código se ejecute repetidamente bajo ciertas condiciones. En este documento unificamos todas las variantes de los ciclos iterativos bajo la estructura **"Hacer...Repetir"**, con dos opciones principales: **"Mientras que"** para evaluar condiciones verdaderas y **"Hasta que"** para evaluar cuando una condición se satisfaga.
 
 ---
 
-### **2. `Hacer...Repetir Hasta`**
+### **1. `Hacer Mientras que...Repetir`**
 
-Esta estructura ejecuta un bloque de código **hasta** que una condición se cumpla. La condición se evalúa **después** de ejecutar el bloque de código, lo que garantiza que el ciclo se ejecute al menos una vez.
+En esta variante, el ciclo se ejecuta **mientras** la condición sea verdadera. La condición se evalúa **antes** de ejecutar el bloque de instrucciones. Si la condición es falsa desde el inicio, el ciclo no se ejecuta.
 
-**Sintaxis en pseudocódigo:**
-
-```
-Hacer
-    // Instrucciones a ejecutar
-Repetir Hasta (condición)
-```
-
-**Ejemplo:**
+**Seudocódigo:**
 
 ```
-i = 1
-Hacer
-    Escribir "El valor de i es: ", i
-    i = i + 1
-Repetir Hasta (i > 5)
-```
-
-En este ejemplo, el ciclo se ejecutará al menos una vez, y seguirá repitiendo hasta que `i` sea mayor que 5.
-
----
-
-### **3. `Repetir Mientras`**
-
-En esta estructura, el ciclo se ejecuta **mientras** la condición sea verdadera. La condición se evalúa **antes** de ejecutar el bloque de código, por lo que si la condición es falsa desde el principio, el ciclo no se ejecutará.
-
-**Sintaxis en pseudocódigo:**
-
-```
-Repetir Mientras (condición)
+Hacer Mientras que (condición)
     // Instrucciones a ejecutar mientras la condición sea verdadera
-Fin Repetir
+Repetir
 ```
 
 **Ejemplo:**
 
 ```
-i = 1
-Repetir Mientras (i <= 5)
-    Escribir "El valor de i es: ", i
-    i = i + 1
-Fin Repetir
+k ← 1
+Hacer Mientras que (k ≤ 5)
+    Escribir "El valor de k es: ", k
+    k ← k + 1
+Repetir
 ```
 
-En este caso, el ciclo seguirá repitiéndose mientras `i` sea menor o igual a 5.
+En este caso, el ciclo se ejecuta mientras `k` sea menor o igual a 5.
 
 ---
 
-### **4. `Repetir Hasta`**
+### **2. `Hacer...Repetir Mientras que`**
 
-En esta estructura, el ciclo se ejecuta **hasta** que la condición se cumpla. La condición se evalúa **antes** de ejecutar el bloque de código, por lo que si la condición es verdadera desde el principio, el ciclo no se ejecutará.
+En esta variante, el ciclo ejecuta las instrucciones **al menos una vez** y luego repite **mientras** la condición sea verdadera. La condición se evalúa **después** de ejecutar el bloque.
 
-**Sintaxis en pseudocódigo:**
+**Seudocódigo:**
 
 ```
-Repetir Hasta (condición)
+Hacer
+    // Instrucciones a ejecutar
+Repetir Mientras que (condición)
+```
+
+**Ejemplo:**
+
+```
+k ← 1
+Hacer
+    Escribir "El valor de k es: ", k
+    k ← k + 1
+Repetir Mientras que (k ≤ 5)
+```
+
+En este caso, el ciclo se ejecutará al menos una vez y seguirá repitiendo mientras `k` sea menor o igual a 5.
+
+---
+
+### **3. `Hacer Hasta que...Repetir`**
+
+En esta variante, el ciclo se ejecuta **hasta** que la condición se cumpla. La condición se evalúa **antes** de ejecutar el bloque de código, lo que significa que si la condición es verdadera desde el inicio, el ciclo no se ejecutará.
+
+**Seudocódigo:**
+
+```
+Hacer Hasta que (condición)
     // Instrucciones a ejecutar mientras la condición sea falsa
-Fin Repetir
+Repetir
 ```
 
 **Ejemplo:**
 
 ```
-i = 1
-Repetir Hasta (i > 5)
-    Escribir "El valor de i es: ", i
-    i = i + 1
-Fin Repetir
+k ← 1
+Hacer Hasta que (k > 5)
+    Escribir "El valor de k es: ", k
+    k ← k + 1
+Repetir
 ```
 
-En este caso, el ciclo se repetirá hasta que `i` sea mayor que 5.
+En este caso, el ciclo seguirá ejecutándose hasta que `k` sea mayor que 5.
 
 ---
 
-### **Resumen:**
+### **4. `Hacer...Repetir Hasta que`**
 
-1. **`Hacer...Repetir Mientras (condición)`**: Evalúa la condición al final; el ciclo se ejecuta al menos una vez y se repite mientras la condición sea verdadera.
-2. **`Hacer...Repetir Hasta (condición)`**: Evalúa la condición al final; el ciclo se ejecuta al menos una vez y se repite hasta que la condición se cumpla.
-3. **`Repetir Mientras (condición)`**: Evalúa la condición al inicio; el ciclo se repite mientras la condición sea verdadera.
-4. **`Repetir Hasta (condición)`**: Evalúa la condición al inicio; el ciclo se repite hasta que la condición se cumpla.
+En esta variante, el ciclo ejecuta las instrucciones **al menos una vez** y luego sigue repitiendo **hasta** que la condición se cumpla. La condición se evalúa **después** de ejecutar el bloque de código.
+
+**Seudocódigo:**
+
+```
+Hacer
+    // Instrucciones a ejecutar
+Repetir Hasta que (condición)
+```
+
+**Ejemplo:**
+
+```
+k ← 1
+Hacer
+    Escribir "El valor de k es: ", k
+    k ← k + 1
+Repetir Hasta que (k > 5)
+```
+
+En este caso, el ciclo se ejecutará al menos una vez y seguirá repitiéndose hasta que `k` sea mayor que 5.
+
+---
+
+### **Resumen de las Variantes del Ciclo `Hacer...Repetir` en Seudocódigo:**
+
+1. **`Hacer Mientras que (condición)...Repetir`**: Evalúa la condición al inicio, el ciclo se ejecuta solo si la condición es verdadera y continúa mientras lo siga siendo.
+2. **`Hacer...Repetir Mientras que (condición)`**: Evalúa la condición al final, el ciclo se ejecuta al menos una vez y continúa mientras la condición sea verdadera.
+3. **`Hacer Hasta que (condición)...Repetir`**: Evalúa la condición al inicio, el ciclo se ejecuta mientras la condición sea falsa y continúa hasta que se cumpla.
+4. **`Hacer...Repetir Hasta que (condición)`**: Evalúa la condición al final, el ciclo se ejecuta al menos una vez y continúa hasta que la condición se cumpla.
