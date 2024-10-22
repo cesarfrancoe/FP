@@ -1,8 +1,6 @@
-### **Estructuras de Control Iterativas**
+# **Estructuras de Control Iterativas**
 
-Las **estructuras de control iterativas** permiten que un bloque de código se ejecute repetidamente mientras se cumpla una condición o hasta que una condición se satisfaga. En este documento, unificaremos las variantes del ciclo iterativo bajo la estructura **"Hacer...Repetir"**.
-
----
+Las **estructuras de control iterativas** permiten que un bloque de código se ejecute repetidamente mientras se cumpla una condición o hasta que una condición se satisfaga. En este documento se unifican las variantes del ciclo iterativo bajo la estructura **"Hacer...Repetir"**.
 
 ### **1. `Hacer...Repetir Mientras`**
 
