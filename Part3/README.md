@@ -80,7 +80,7 @@ Repetir Hacer
 
 En este caso, el ciclo seguirá ejecutándose hasta que `k` sea mayor que 5.
 
-**Nota**: Esta estructura se puede reemplazar por un ciclo **Mientras** utilizando **NO** antes de la condición. En lugar de usar **Hasta que (condición)**, podemos usar **Mientras que NO (condición)** para obtener el mismo comportamiento. Por ejemplo:
+**Nota**: En lugar de usar **Hasta que (condición)**, podemos usar **Mientras que NO (condición)** para obtener el mismo comportamiento. Por ejemplo:
 
 ```
 Hacer Mientras que NO (k > 5)
