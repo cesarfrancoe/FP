@@ -1,4 +1,4 @@
-# **Problema 200: Suma de 5 números enteros**
+## **Problema 200: Suma de 5 números enteros**
 
 **Descripción**:  
 Escribe un algoritmo que solicite al usuario ingresar 5 números enteros. El algoritmo debe calcular y mostrar la suma de esos 5 números.
