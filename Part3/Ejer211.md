@@ -16,20 +16,14 @@ El problema consiste en simular **6N** lanzamientos de un dado de 6 caras y obte
 
 **Ejemplo**:  
 Supongamos que el usuario ingresa **N = 3**. Esto significa que se realizarán **6 \* 3 = 18** lanzamientos. Los resultados de estos lanzamientos podrían generar las siguientes estadísticas:  
-- Número 1: 4 veces  
-- Número 2: 3 veces  
-- Número 3: 2 veces  
-- Número 4: 5 veces  
-- Número 5: 1 vez  
-- Número 6: 3 veces  
 
-El algoritmo debe mostrar:  
-**"Número 1: 4 veces"**  
-**"Número 2: 3 veces"**  
-**"Número 3: 2 veces"**  
-**"Número 4: 5 veces"**  
-**"Número 5: 1 vez"**  
-**"Número 6: 3 veces"**
+Estadisticas (Frecuencia):  
+**"Número 1: 4"**  
+**"Número 2: 3"**  
+**"Número 3: 2"**  
+**"Número 4: 5"**  
+**"Número 5: 1"**  
+**"Número 6: 3"**
 
 ---
 
