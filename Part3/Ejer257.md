@@ -10,16 +10,34 @@ El problema consiste en verificar si un número ingresado por el usuario cumple 
 1. Solicitar al usuario ingresar un número de 10 dígitos.
    - Si el número ingresado no tiene exactamente 10 dígitos, mostrar un mensaje de error y solicitar nuevamente el código.
 2. Calcular el dígito de control usando la fórmula de verificación para ISBN-10:
-   \[
-   S = 1 \cdot d_1 + 2 \cdot d_2 + 3 \cdot d_3 + \dots + 10 \cdot d_{10}
-   \]
-   donde \(d_1, d_2, \dots, d_{10}\) son los dígitos del ISBN. El código es válido si el resultado de \( S \mod 11 = 0 \).
+   ```
+   S = (1 * d1) + (2 * d2) + (3 * d3) + ... + (10 * d10)
+   ```
+   donde `d1, d2, ..., d10` son los dígitos del ISBN. El código es válido si el resultado de `S % 11 == 0`.
 3. Mostrar el resultado al usuario, indicando si el código es un ISBN válido o no.
 
 **Ejemplo**:  
 Supongamos que el usuario ingresa el código ISBN `0306406152`.
-- Cálculo de \( S = 1 \cdot 0 + 2 \cdot 3 + 3 \cdot 0 + 4 \cdot 6 + 5 \cdot 4 + 6 \cdot 0 + 7 \cdot 6 + 8 \cdot 1 + 9 \cdot 5 + 10 \cdot 2 = 176 \).
-- Dado que \( 176 \mod 11 = 0 \), el código es válido.
+
+- Cálculo de `S`:
+  - `1 * 0 = 0`
+  - `2 * 3 = 6`
+  - `3 * 0 = 0`
+  - `4 * 6 = 24`
+  - `5 * 4 = 20`
+  - `6 * 0 = 0`
+  - `7 * 6 = 42`
+  - `8 * 1 = 8`
+  - `9 * 5 = 45`
+  - `10 * 2 = 20`
+
+  Sumando todos los resultados:
+  ```
+  S = 0 + 6 + 0 + 24 + 20 + 0 + 42 + 8 + 45 + 20 = 176
+  ```
+
+- Verificación:  
+  Dado que `176 % 11 == 0`, el código es válido.
 
 El algoritmo debe mostrar: **"El código ISBN es válido."**
 
