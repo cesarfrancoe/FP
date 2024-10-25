@@ -1,22 +1,35 @@
-## **Problema 201: Suma de N números enteros**
+## **Problema 201: Simulación de 12 lanzamientos de un dado de 6 caras**
 
 ### **Descripción**  
-Escribe un algoritmo que solicite al usuario ingresar un número entero **N**. El algoritmo debe pedir al usuario ingresar **N** números enteros, calcular y mostrar la suma de esos **N** números.
+Escribe un algoritmo que simule 12 lanzamientos de un dado de 6 caras. El algoritmo debe mostrar el resultado de cada lanzamiento.
 
 ---
 
 ### **Análisis**  
-El problema consiste en sumar **N** números enteros ingresados por el usuario.  
-1. Se solicita al usuario ingresar un número entero **N**.  
-2. Se solicitan **N** números enteros.  
-3. Se calcula la suma acumulada de los **N** números ingresados.  
-4. Finalmente, se muestra el resultado de la suma.
+El problema consiste en simular el lanzamiento de un dado de 6 caras exactamente 12 veces.  
+1. Se simula el lanzamiento de un dado 12 veces, generando un número aleatorio entre 1 y 6 en cada lanzamiento.  
+2. Se muestran los resultados de cada lanzamiento.
 
 **Ejemplo**:  
-Supongamos que el usuario ingresa **N = 4** y luego los números: 2, 5, -3, y 8.  
-La suma de estos números sería:  
-\( 2 + 5 + (-3) + 8 = 12 \)  
-El algoritmo debe mostrar: **"La suma de los 4 números es: 12"**
+Los resultados de los lanzamientos podrían ser:  
+Lanzamiento 1: 3  
+Lanzamiento 2: 6  
+Lanzamiento 3: 2  
+Lanzamiento 4: 4  
+Lanzamiento 5: 5  
+Lanzamiento 6: 1  
+Lanzamiento 7: 4  
+Lanzamiento 8: 3  
+Lanzamiento 9: 6  
+Lanzamiento 10: 2  
+Lanzamiento 11: 5  
+Lanzamiento 12: 1  
+
+El algoritmo debe mostrar:  
+**"Lanzamiento 1: 3"**  
+**"Lanzamiento 2: 6"**  
+...  
+**"Lanzamiento 12: 1"**
 
 ---
 
