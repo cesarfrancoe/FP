@@ -27,6 +27,7 @@ Para simular el juego de Serpientes y Escaleras, se deben considerar las siguien
       - Si el usuario ingresa algo diferente a "L", el sistema debe mostrar un mensaje de error y pedir que intente de nuevo hasta que ingrese la letra "L".
    - Después de lanzar el dado correctamente, el jugador humano avanza su ficha el número de casillas indicado por el dado.
    - Luego, la computadora realiza automáticamente su movimiento lanzando un dado de seis caras.
+   - En cada turno, el sistema debe mostrar las posiciones actuales del jugador humano y la computadora.
 
 5. **Movimiento en el tablero**:
    - Los jugadores avanzan en el sentido de las agujas del reloj.
@@ -45,10 +46,10 @@ Para simular el juego de Serpientes y Escaleras, se deben considerar las siguien
    - Si ambos jugadores llegan a la casilla 100 en el mismo turno, se considera un empate.
 
 **Ejemplo de desarrollo del juego**:  
-1. El jugador humano escribe "L" para lanzar el dado y obtiene un `4`. Se mueve desde la casilla 1 hasta la casilla 5.
-2. En su turno, la computadora lanza el dado y obtiene un `6`, moviéndose de la casilla 1 a la casilla 7.
+1. El jugador humano escribe "L" para lanzar el dado y obtiene un `4`. Se mueve desde la casilla 1 hasta la casilla 5. El sistema muestra: **"Jugador Humano: Casilla 5, Computadora: Casilla 1"**.
+2. En su turno, la computadora lanza el dado y obtiene un `6`, moviéndose de la casilla 1 a la casilla 7. El sistema muestra: **"Jugador Humano: Casilla 5, Computadora: Casilla 7"**.
 3. En su siguiente turno, el jugador humano intenta lanzar el dado pero escribe una letra incorrecta, y el sistema muestra un error pidiendo que escriba "L" para lanzar.
-4. El jugador humano escribe "L", lanza el dado y obtiene un `5`, avanzando de la casilla 5 a la 10, donde hay una escalera que lo lleva a la casilla 20.
+4. El jugador humano escribe "L", lanza el dado y obtiene un `5`, avanzando de la casilla 5 a la 10, donde hay una escalera que lo lleva a la casilla 20. El sistema muestra: **"Jugador Humano: Casilla 20, Computadora: Casilla 7"**.
 5. El juego continúa hasta que uno de los jugadores alcanza la casilla 100.
 
 ---
@@ -58,5 +59,6 @@ Para simular el juego de Serpientes y Escaleras, se deben considerar las siguien
 - El dado utilizado en el juego debe ser de **6 caras**.
 - La disposición de las serpientes y escaleras debe basarse en la imagen del tablero proporcionada.
 - Las posiciones de serpientes y escaleras deben almacenarse en **variables simples**, sin utilizar arreglos ni estructuras similares.
+- En cada turno, el sistema debe mostrar las posiciones actuales del jugador humano y la computadora.
 - El algoritmo debe utilizar estructuras de control iterativas del tipo **"Hacer... Repetir"** para el flujo de los turnos.
 - No se pueden usar instrucciones rompedoras (como `romper`, `continuar` u otra similar) para finalizar el ciclo.
