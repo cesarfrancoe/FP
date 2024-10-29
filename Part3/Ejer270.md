@@ -1,4 +1,4 @@
-## **Problema 270: Simulación del juego de Serpientes y Escaleras**
+## **Problema 270: Simulador del juego de Serpientes y Escaleras**
 
 [<img src="https://www.thermmark.co.uk/wp-content/uploads/2017/01/TMG003-100LF-Snakes-Ladders-1-100-Large-Full-Solid.png" width="500px">](https://www.thermmark.co.uk/wp-content/uploads/2017/01/TMG003-100LF-Snakes-Ladders-1-100-Large-Full-Solid.png)
 
@@ -23,9 +23,8 @@ Para simular el juego de Serpientes y Escaleras, se deben considerar las siguien
 
 4. **Turnos de juego**:
    - Los jugadores se turnan para lanzar un dado de seis caras.
-   - En el turno del jugador humano, se le solicita escribir la letra **"L"** para lanzar el dado.
-      - Si el usuario ingresa algo diferente a "L", el sistema debe mostrar un mensaje de error y pedir que intente de nuevo hasta que ingrese la letra "L".
-   - Después de lanzar el dado correctamente, el jugador humano avanza su ficha el número de casillas indicado por el dado.
+   - En el turno del jugador humano, el sistema solicita presionar `[ENTER]` para lanzar el dado.
+   - Después de presionar `[ENTER]`, el jugador humano lanza el dado y avanza su ficha el número de casillas indicado por el dado.
    - Luego, la computadora realiza automáticamente su movimiento lanzando un dado de seis caras.
    - En cada turno, el sistema debe mostrar las posiciones actuales del jugador humano y la computadora.
 
@@ -46,16 +45,15 @@ Para simular el juego de Serpientes y Escaleras, se deben considerar las siguien
    - Si ambos jugadores llegan a la casilla 100 en el mismo turno, se considera un empate.
 
 **Ejemplo de desarrollo del juego**:  
-1. El jugador humano escribe "L" para lanzar el dado y obtiene un `4`. Se mueve desde la casilla 1 hasta la casilla 5. El sistema muestra: **"Jugador Humano: Casilla 5, Computadora: Casilla 1"**.
+1. El sistema le pide al jugador humano presionar `[ENTER]` para lanzar el dado, y el jugador obtiene un `4`. Se mueve desde la casilla 1 hasta la casilla 5. El sistema muestra: **"Jugador Humano: Casilla 5, Computadora: Casilla 1"**.
 2. En su turno, la computadora lanza el dado y obtiene un `6`, moviéndose de la casilla 1 a la casilla 7. El sistema muestra: **"Jugador Humano: Casilla 5, Computadora: Casilla 7"**.
-3. En su siguiente turno, el jugador humano intenta lanzar el dado pero escribe una letra incorrecta, y el sistema muestra un error pidiendo que escriba "L" para lanzar.
-4. El jugador humano escribe "L", lanza el dado y obtiene un `5`, avanzando de la casilla 5 a la 10, donde hay una escalera que lo lleva a la casilla 20. El sistema muestra: **"Jugador Humano: Casilla 20, Computadora: Casilla 7"**.
-5. El juego continúa hasta que uno de los jugadores alcanza la casilla 100.
+3. En su siguiente turno, el jugador humano vuelve a presionar `[ENTER]` para lanzar el dado y obtiene un `5`, avanzando de la casilla 5 a la 10, donde hay una escalera que lo lleva a la casilla 20. El sistema muestra: **"Jugador Humano: Casilla 20, Computadora: Casilla 7"**.
+4. El juego continúa hasta que uno de los jugadores alcanza la casilla 100.
 
 ---
 
 ### **Requerimientos**  
-- El algoritmo debe solicitar al jugador humano escribir la letra **"L"** para lanzar el dado. Si se ingresa cualquier otro valor, se debe mostrar un mensaje de error y solicitar nuevamente la entrada hasta que sea correcta.
+- El algoritmo debe solicitar al jugador humano presionar `[ENTER]` para lanzar el dado.
 - El dado utilizado en el juego debe ser de **6 caras**.
 - La disposición de las serpientes y escaleras debe basarse en la imagen del tablero proporcionada.
 - Las posiciones de serpientes y escaleras deben almacenarse en **variables simples**, sin utilizar arreglos ni estructuras similares.
