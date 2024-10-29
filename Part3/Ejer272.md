@@ -1,4 +1,4 @@
-## **Problema 272: Simulador de l juego de dados "Pig"**
+## **Problema 272: Simulador del juego de dados "Pig"**
 
 ### **Descripción**  
 "Pig" es un juego de dados que combina elementos de suerte y estrategia. En esta versión, el jugador humano compite contra la computadora. Ambos jugadores se turnan para lanzar dos dados con el objetivo de ser los primeros en alcanzar o superar una puntuación objetivo predeterminada, generalmente 100 puntos.
@@ -16,50 +16,53 @@ Para simular el juego "Pig" entre el jugador humano y la computadora, se deben c
 2. **Turnos**:
    - La computadora inicia cada turno lanzando dos dados.
    - Luego, el jugador humano toma su turno lanzando dos dados.
-   - En cada turno, ambos jugadores pueden lanzar los dados tantas veces como deseen, acumulando puntos en su puntuación de turno.
+   - En cada turno, tanto la computadora como el jugador humano pueden lanzar los dados tantas veces como deseen, acumulando puntos en su puntuación de turno.
 
-3. **Lanzamiento de los Dados**:
-   - En su turno, el sistema debe mostrar la indicación: `"Presiona [ENTER] para lanzar el dado..."` para que el jugador humano pueda lanzar sus dados. Cuando el jugador presiona ENTER, se lanzan los dados.
-   - Cada lanzamiento puede producir los siguientes resultados:
-     - Si alguno de los dados muestra un `1`, el jugador pierde todos los puntos acumulados en el turno y su turno termina.
-     - Si ambos dados muestran `1`s, el jugador pierde todos sus puntos acumulados en el juego y su turno también termina.
-     - Si los dados muestran valores distintos de `1`, el jugador acumula la suma de los valores obtenidos en el turno.
+3. **Puntuación**:
+   - Si alguno de los jugadores lanza un `1` en cualquiera de los dados, pierde todos los puntos acumulados en ese turno y su turno termina inmediatamente.
+   - Si un jugador lanza dos `1`s, pierde todos los puntos acumulados en el juego hasta ese momento, y su turno termina.
 
-4. **Mensajes del Sistema Durante el Juego**:
-   - Cada vez que el jugador humano lanza los dados, el sistema muestra un mensaje con el resultado obtenido y la acción correspondiente.
-     - Ejemplo: `"Humano lanzó 2 dados: 4 y 3"`
-     - `"Total acumulado en este turno: 7 puntos"`
+4. **Decisión de Continuar o Detenerse**:
+   - Al inicio de su turno, el jugador humano debe presionar `[ENTER]` para lanzar los dados.
+   - Después del primer lanzamiento, el jugador humano debe decidir si continúa lanzando o detiene su turno.
+      - Para cada lanzamiento adicional en el mismo turno, el jugador humano debe responder con "S" para continuar o "N" para detenerse y acumular los puntos del turno a su puntuación total.
+      - Si el usuario ingresa cualquier valor distinto de "S" o "N", el sistema debe mostrar un mensaje de error y solicitar nuevamente la respuesta hasta que sea correcta.
+   - La computadora tomará decisiones basadas en una estrategia predefinida para decidir si continúa lanzando o se detiene.
 
-5. **Decisión de Continuar o Detenerse**:
-   - Después de cada lanzamiento, el jugador debe decidir si sigue lanzando para acumular más puntos o si detiene su turno para conservar los puntos obtenidos hasta ese momento.
-   - Para el jugador humano, se muestra un mensaje con la opción de continuar o detenerse.
-   - La computadora tomará decisiones basadas en una estrategia predefinida.
-
-6. **Estructura de Control para el Flujo de Turnos**:
-   - Para manejar el flujo de turnos, el algoritmo debe utilizar una estructura de control iterativa del tipo **"Hacer... Repetir"** para verificar constantemente si se ha alcanzado la condición de finalización (100 puntos o más).
-   - No se pueden usar instrucciones rompedoras (como **romper**, **continuar** u otra similar) para finalizar el ciclo. La condición de finalización debe evaluarse directamente en la estructura "Hacer... Repetir".
-
-7. **Final del Juego**:
-   - El juego termina cuando el jugador humano o la computadora alcanzan o superan los 100 puntos. Se debe completar la ronda actual antes de declarar al ganador. En caso de empate, ambos jugadores se consideran ganadores.
+5. **Final del Juego**:
+   - El juego termina cuando el jugador humano o la computadora alcanzan o superan los 100 puntos.
+   - Se debe completar la ronda actual antes de declarar al ganador. En caso de empate, ambos jugadores se consideran ganadores.
 
 **Ejemplo de desarrollo del juego**:  
-1. El sistema muestra el turno del jugador humano y la indicación:
-   ```
-   Presiona [ENTER] para lanzar el dado...
-   ```
-
-2. El jugador humano presiona [ENTER], y el sistema muestra:
-   - `"Humano lanzó 2 dados: 5 y 2"`
-   - `"Total acumulado en este turno: 7 puntos"`
-
-3. El sistema solicita al jugador humano si desea continuar o detenerse. El jugador puede tomar la decisión.
-4. El juego continúa en turnos hasta que alguno de los jugadores alcance o supere los 100 puntos.
+1. La computadora lanza los dados y obtiene un `3` y un `4`, acumulando 7 puntos en su turno.
+2. La computadora decide lanzar de nuevo y obtiene un `2` y un `5`, acumulando 7 puntos adicionales para un total de 14 puntos en su turno.
+3. La computadora decide detenerse y acumula sus puntos a su puntuación total.
+4. Es el turno del jugador humano. El sistema le pide presionar `[ENTER]` para lanzar los dados. El jugador presiona `[ENTER]` y obtiene un `6` y un `1`. Debido a que obtuvo un `1`, pierde todos los puntos de su turno y su turno termina.
+5. El juego continúa hasta que alguno de los jugadores alcance o supere los 100 puntos.
 
 ---
 
 ### **Requerimientos**  
-- El algoritmo debe solicitar al jugador humano que presione [ENTER] para lanzar los dados en su turno.
-- En cada lanzamiento, el sistema debe mostrar el resultado y las acciones resultantes de acuerdo con las reglas.
-- El algoritmo debe utilizar una estructura de control iterativa **"Hacer... Repetir"** para el flujo de turnos, sin emplear instrucciones rompedoras (como **romper**, **continuar** u otra similar) para finalizar el ciclo. La condición de finalización debe evaluarse directamente en la estructura.
-- Al final de cada turno, el sistema debe preguntar al jugador humano si desea continuar o detenerse.
-- El juego termina cuando uno de los jugadores alcanza o supera la puntuación objetivo, y se debe completar la ronda actual para declarar un ganador en caso de empate.
+- El algoritmo debe alternar turnos entre la computadora y el jugador humano, permitiendo la acumulación de puntos en cada turno.
+- Si un jugador obtiene al menos un `1` en los dados, debe perder los puntos de su turno, y si obtiene dos `1`s, pierde todos sus puntos acumulados en el juego.
+- La decisión de continuar o detenerse debe ser opcional para el jugador humano después de cada lanzamiento.
+   - Al inicio de su turno, el jugador humano debe presionar `[ENTER]` para lanzar los dados.
+   - Para cada lanzamiento adicional en el mismo turno, el jugador humano debe responder con "S" para continuar lanzando o "N" para detenerse. Si el usuario ingresa cualquier otro valor, debe mostrarse un mensaje de error y solicitar nuevamente la respuesta hasta que sea correcta.
+- La computadora debe seguir una estrategia predefinida para decidir si continúa lanzando o se detiene.
+- El juego debe terminar al completar la ronda en que un jugador alcanza o supera la puntuación objetivo.
+
+---
+
+### **Notas sobre Estrategias para la Computadora**
+
+Existen varias estrategias que la computadora puede seguir para decidir si continúa lanzando o se detiene:
+
+1. **Estrategia aleatoria básica**: La computadora genera un número aleatorio entre 0 y 1 donde `0` indica "N" (detenerse) y `1` indica "S" (continuar). Esto permite una probabilidad simple de 50% para cada opción, agregando un elemento de imprevisibilidad.
+
+2. **Estrategia basada en puntaje acumulado del turno**: La computadora podría decidir detenerse si ha acumulado una cantidad de puntos específica en su turno (por ejemplo, 15 puntos), reduciendo así el riesgo de perder puntos acumulados en caso de obtener un `1`.
+
+3. **Estrategia según la puntuación total**: Si la computadora está cerca de alcanzar el objetivo de 100 puntos, podría optar por arriesgarse menos y detenerse rápidamente para asegurar los puntos necesarios sin correr riesgos innecesarios. Por ejemplo, si la computadora tiene 95 puntos, le bastará con obtener al menos 5 puntos en su próximo turno. En lugar de continuar lanzando repetidamente, podría detenerse después de un solo lanzamiento si obtiene esos puntos, minimizando el riesgo de perder los acumulados.
+
+4. **Estrategia basada en distancia mínima con el usuario**: La computadora puede evaluar la diferencia de puntos con el jugador humano, tanto si está por encima como por debajo en puntaje. Si esta diferencia es menor que un valor mínimo predeterminado (por ejemplo, 10 puntos), la computadora puede optar por arriesgarse y continuar lanzando para reducir la distancia si va detrás, o ampliarla si va adelante. Si la distancia es amplia, puede optar por detenerse y conservar sus puntos acumulados.
+
+Estas estrategias pueden hacer que el juego sea más desafiante y agregar un componente de decisión similar al de un jugador humano.
