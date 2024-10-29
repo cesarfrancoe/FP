@@ -18,25 +18,32 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
    - El juego se desarrolla en turnos, donde cada jugador lanza los dados y sigue las instrucciones hasta que solo uno quede con fichas.
 
 2. **Visualización del Estado del Juego Antes de Cada Turno**:
-   - Antes de cada turno, el sistema muestra las posiciones relativas y cantidad de fichas de los jugadores con referencia únicamente al jugador que va a lanzar:
+   - Antes de cada turno, el sistema muestra las posiciones relativas y cantidad de fichas de los jugadores con referencia únicamente al jugador que va a lanzar, junto con un mensaje claro sobre el jugador que está por lanzar:
      
      - Si el jugador humano va a lanzar:
        ```
+       Turno de Humano:
        [Rosie: ? fichas] <-- [Humano: ? fichas] --> [Bender: ? fichas]
+       Humano lanzará ? dados.
        ```
 
      - Si Rosie va a lanzar:
        ```
+       Turno de Rosie:
        [Bender: ? fichas] <-- [Rosie: ? fichas] --> [Humano: ? fichas]
+       Rosie lanzará ? dados.
        ```
 
      - Si Bender va a lanzar:
        ```
+       Turno de Bender:
        [Humano: ? fichas] <-- [Bender: ? fichas] --> [Rosie: ? fichas]
+       Bender lanzará ? dados.
        ```
 
 3. **Lanzamiento de los Dados y Comportamiento de los Resultados**:
-   - En cada turno, el jugador lanza tres dados, que pueden mostrar las siguientes caras:
+   - En cada turno, el jugador lanza entre uno y tres dados, dependiendo de la cantidad de fichas que tiene, y el sistema muestra un mensaje indicando el número de dados lanzados.
+   - Los dados pueden mostrar las siguientes caras:
       - **1: L (Left)** - Pasa una ficha al jugador a la izquierda.
       - **2: C (Center)** - Coloca una ficha en el centro, eliminándola del juego.
       - **3: R (Right)** - Pasa una ficha al jugador a la derecha.
@@ -44,13 +51,19 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
       - **5: 2 (Punto)** - Acción neutra, no se hace nada.
       - **6: 3 (Punto)** - Acción neutra, no se hace nada.
    - Si un jugador tiene menos de tres fichas, solo lanza la cantidad de dados equivalente al número de fichas que posee.
-   - **Para el jugador humano**: El algoritmo debe solicitar que escriba la letra **"L"** para lanzar el dado. Si se ingresa cualquier otro valor, el sistema debe mostrar un mensaje de error y solicitar nuevamente la entrada hasta que sea correcta.
+   - **Para el jugador humano**: El algoritmo debe solicitar que escriba la letra **"L"** para lanzar los dados. Si se ingresa cualquier otro valor, el sistema debe mostrar un mensaje de error y solicitar nuevamente la entrada hasta que sea correcta.
 
-4. **Orden de los Jugadores y Sentido del Juego**:
+4. **Mensajes del Sistema Durante el Juego**:
+   - Cada vez que un jugador lanza los dados, el sistema muestra un mensaje detallado de los resultados de los dados y las acciones realizadas.
+     - Ejemplo: `"Humano lanzó 3 dados: L, •, R"`
+     - `"Humano pasó 1 ficha a Rosie y 1 ficha a Bender"`
+   - Al final de cada turno, el sistema muestra el estado actualizado de las fichas de cada jugador.
+
+5. **Orden de los Jugadores y Sentido del Juego**:
    - El juego se desarrolla en sentido **horario**, comenzando siempre con el jugador humano, seguido de Rosie y, por último, Bender.
    - Este orden se repite cíclicamente hasta que solo uno de los tres conserve fichas.
 
-5. **Objetivo del Juego**:
+6. **Objetivo del Juego**:
    - El juego continúa en rondas hasta que solo un jugador tenga fichas, convirtiéndose en el ganador.
    - Los jugadores que pierden todas sus fichas no lanzan los dados en su turno, pero pueden recibir fichas de otros jugadores y reintegrarse al juego.
 
@@ -58,12 +71,15 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
 1. Antes de comenzar el turno del jugador humano, el sistema muestra:
 
    ```
+   Turno de Humano:
    [Rosie: 3 fichas] <-- [Humano: 3 fichas] --> [Bender: 3 fichas]
+   Humano lanzará 3 dados.
    ```
 
 2. El sistema solicita al jugador humano que escriba "L" para lanzar los dados. Si se ingresa otro valor, se muestra un mensaje de error y se solicita nuevamente hasta que sea correcto.
 3. El jugador humano lanza tres dados y obtiene los resultados: `L`, `•`, `R`.
-   - Pasa una ficha a Rosie (a su izquierda), no hace nada con el segundo dado y pasa una ficha a Bender (a su derecha).
+   - El sistema muestra: `"Humano lanzó 3 dados: L, •, R"`
+   - También muestra las acciones: `"Humano pasó 1 ficha a Rosie y 1 ficha a Bender"`
 4. Antes del siguiente turno, el sistema muestra nuevamente el estado actualizado de cada jugador, con las fichas actuales y quiénes están a sus lados.
 5. El juego continúa en sentido horario hasta que solo un jugador tiene fichas, y ese jugador es el ganador.
 
@@ -72,8 +88,9 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
 ### **Requerimientos**  
 - El algoritmo debe solicitar el nombre del jugador humano al inicio del juego.
 - El algoritmo debe solicitar la cantidad inicial de fichas, validando que esté entre 3 y 5. Si el usuario ingresa un valor fuera de este rango, se debe mostrar un mensaje de error y solicitar nuevamente hasta que sea correcto.
-- Antes de cada turno, el sistema debe mostrar las posiciones relativas y la cantidad de fichas de los jugadores, con referencia únicamente al jugador que va a lanzar.
+- Antes de cada turno, el sistema debe mostrar las posiciones relativas y la cantidad de fichas de los jugadores, con referencia únicamente al jugador que va a lanzar, junto con un mensaje claro sobre quién lanzará los dados y cuántos.
 - Para lanzar el dado, el jugador humano debe escribir la letra **"L"**. Si se ingresa cualquier otro valor, el sistema debe mostrar un mensaje de error y solicitar nuevamente la entrada hasta que sea correcta.
+- Cada vez que un jugador lanza los dados, el sistema debe mostrar un mensaje detallado de los resultados y las acciones realizadas en ese turno.
 - El juego se desarrolla en sentido **horario**, comenzando siempre con el jugador humano, seguido de Rosie y, por último, Bender.
 - Cada jugador debe seguir las instrucciones de los dados en cada turno para pasar fichas o eliminarlas.
 - Si un jugador tiene menos de tres fichas, solo debe lanzar el número de dados equivalente a la cantidad de fichas que posee.
