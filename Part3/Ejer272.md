@@ -1,4 +1,4 @@
-## **Problema 271: Juego de Dados "Pig"**
+## **Problema 272: Juego de Dados "Pig"**
 
 ### **Descripción**  
 "Pig" es un juego de dados que combina elementos de suerte y estrategia. En esta versión, el jugador humano compite contra la computadora. Ambos jugadores se turnan para lanzar dos dados con el objetivo de ser los primeros en alcanzar o superar una puntuación objetivo predeterminada, generalmente 100 puntos.
