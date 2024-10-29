@@ -63,7 +63,11 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
    - El juego se desarrolla en sentido **horario**, comenzando siempre con el jugador humano, seguido de Rosie y, por último, Bender.
    - Este orden se repite cíclicamente hasta que solo uno de los tres conserve fichas.
 
-6. **Objetivo del Juego**:
+6. **Estructura de Control para el Flujo de Turnos**:
+   - Para manejar el flujo de turnos, el algoritmo debe utilizar una estructura de control iterativa del tipo **"Hacer... Repetir"** para verificar constantemente si se ha alcanzado la condición de finalización (solo un jugador conserva fichas).
+   - No se pueden usar instrucciones rompedoras (como **romper**, **continuar** u otra similar) para finalizar el ciclo. La condición de finalización debe evaluarse directamente en la estructura "Hacer... Repetir".
+
+7. **Objetivo del Juego**:
    - El juego continúa en rondas hasta que solo un jugador tenga fichas, convirtiéndose en el ganador.
    - Los jugadores que pierden todas sus fichas no lanzan los dados en su turno, pero pueden recibir fichas de otros jugadores y reintegrarse al juego.
 
@@ -80,7 +84,7 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
 3. El jugador humano lanza tres dados y obtiene los resultados: `L`, `•`, `R`.
    - El sistema muestra: `"Humano lanzó 3 dados: L, •, R"`
    - También muestra las acciones: `"Humano pasó 1 ficha a Rosie y 1 ficha a Bender"`
-4. Antes del siguiente turno, el sistema muestra nuevamente el estado actualizado de cada jugador, con las fichas actuales y quiénes están a sus lados.
+4. Al final de cada turno, el sistema muestra el estado actualizado de las fichas de cada jugador y se verifica la condición de finalización.
 5. El juego continúa en sentido horario hasta que solo un jugador tiene fichas, y ese jugador es el ganador.
 
 ---
@@ -91,6 +95,7 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
 - Antes de cada turno, el sistema debe mostrar las posiciones relativas y la cantidad de fichas de los jugadores, con referencia únicamente al jugador que va a lanzar, junto con un mensaje claro sobre quién lanzará los dados y cuántos.
 - Para lanzar el dado, el jugador humano debe escribir la letra **"L"**. Si se ingresa cualquier otro valor, el sistema debe mostrar un mensaje de error y solicitar nuevamente la entrada hasta que sea correcta.
 - Cada vez que un jugador lanza los dados, el sistema debe mostrar un mensaje detallado de los resultados y las acciones realizadas en ese turno.
+- El juego debe utilizar una estructura de control iterativa **"Hacer... Repetir"** para el flujo de turnos, sin emplear instrucciones rompedoras (como **romper**, **continuar** u otra similar) para finalizar el ciclo. La condición de finalización debe evaluarse directamente en la estructura.
 - El juego se desarrolla en sentido **horario**, comenzando siempre con el jugador humano, seguido de Rosie y, por último, Bender.
 - Cada jugador debe seguir las instrucciones de los dados en cada turno para pasar fichas o eliminarlas.
 - Si un jugador tiene menos de tres fichas, solo debe lanzar el número de dados equivalente a la cantidad de fichas que posee.
