@@ -96,7 +96,7 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
 - Para el jugador humano, el sistema debe mostrar el mensaje `"Presiona [ENTER] para lanzar el dado..."`, y cuando el jugador presione ENTER, se lanzarán los dados.
 - Cada vez que un jugador lanza los dados, el sistema debe mostrar un mensaje detallado de los resultados y las acciones realizadas en ese turno.
 - El juego debe utilizar una estructura de control iterativa **"Hacer... Repetir"** para el flujo de turnos, sin emplear instrucciones rompedoras (como **romper**, **continuar** u otra similar) para finalizar el ciclo. La condición de finalización debe evaluarse directamente en la estructura.
-- El juego se desarrolla en sentido **horario**, comenzando siempre con el jugador humano, seguido de Rosie y, por último, Bender.
+- El juego se desarrolla en sentido horario, comenzando siempre con el jugador humano, seguido de Rosie y, por último, Bender.
 - Cada jugador debe seguir las instrucciones de los dados en cada turno para pasar fichas o eliminarlas.
 - Si un jugador tiene menos de tres fichas, solo debe lanzar el número de dados equivalente a la cantidad de fichas que posee.
 - Los jugadores sin fichas no lanzan dados, pero pueden recibir fichas de otros jugadores y reintegrarse al juego.
