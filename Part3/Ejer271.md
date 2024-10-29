@@ -24,7 +24,7 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
        ```
        Turno de Humano:
        [Rosie: ? fichas] <-- [Humano: ? fichas] --> [Bender: ? fichas]
-       Humano lanzará ? dados.
+       Presiona [ENTER] para lanzar el dado...
        ```
 
      - Si Rosie va a lanzar:
@@ -51,7 +51,7 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
       - **5: 2 (Punto)** - Acción neutra, no se hace nada.
       - **6: 3 (Punto)** - Acción neutra, no se hace nada.
    - Si un jugador tiene menos de tres fichas, solo lanza la cantidad de dados equivalente al número de fichas que posee.
-   - **Para el jugador humano**: El algoritmo debe solicitar que escriba la letra **"L"** para lanzar los dados. Si se ingresa cualquier otro valor, el sistema debe mostrar un mensaje de error y solicitar nuevamente la entrada hasta que sea correcta.
+   - **Para el jugador humano**: El sistema debe mostrar el mensaje `"Presiona [ENTER] para lanzar el dado..."`. Cuando el jugador presiona ENTER, se lanzan los dados.
 
 4. **Mensajes del Sistema Durante el Juego**:
    - Cada vez que un jugador lanza los dados, el sistema muestra un mensaje detallado de los resultados de los dados y las acciones realizadas.
@@ -77,10 +77,10 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
    ```
    Turno de Humano:
    [Rosie: 3 fichas] <-- [Humano: 3 fichas] --> [Bender: 3 fichas]
-   Humano lanzará 3 dados.
+   Presiona [ENTER] para lanzar el dado...
    ```
 
-2. El sistema solicita al jugador humano que escriba "L" para lanzar los dados. Si se ingresa otro valor, se muestra un mensaje de error y se solicita nuevamente hasta que sea correcto.
+2. El jugador humano presiona [ENTER] para lanzar los dados.
 3. El jugador humano lanza tres dados y obtiene los resultados: `L`, `•`, `R`.
    - El sistema muestra: `"Humano lanzó 3 dados: L, •, R"`
    - También muestra las acciones: `"Humano pasó 1 ficha a Rosie y 1 ficha a Bender"`
@@ -93,7 +93,7 @@ Para simular el juego "LCR" con tres participantes, se deben tener en cuenta las
 - El algoritmo debe solicitar el nombre del jugador humano al inicio del juego.
 - El algoritmo debe solicitar la cantidad inicial de fichas, validando que esté entre 3 y 5. Si el usuario ingresa un valor fuera de este rango, se debe mostrar un mensaje de error y solicitar nuevamente hasta que sea correcto.
 - Antes de cada turno, el sistema debe mostrar las posiciones relativas y la cantidad de fichas de los jugadores, con referencia únicamente al jugador que va a lanzar, junto con un mensaje claro sobre quién lanzará los dados y cuántos.
-- Para lanzar el dado, el jugador humano debe escribir la letra **"L"**. Si se ingresa cualquier otro valor, el sistema debe mostrar un mensaje de error y solicitar nuevamente la entrada hasta que sea correcta.
+- Para el jugador humano, el sistema debe mostrar el mensaje `"Presiona [ENTER] para lanzar el dado..."`, y cuando el jugador presione ENTER, se lanzarán los dados.
 - Cada vez que un jugador lanza los dados, el sistema debe mostrar un mensaje detallado de los resultados y las acciones realizadas en ese turno.
 - El juego debe utilizar una estructura de control iterativa **"Hacer... Repetir"** para el flujo de turnos, sin emplear instrucciones rompedoras (como **romper**, **continuar** u otra similar) para finalizar el ciclo. La condición de finalización debe evaluarse directamente en la estructura.
 - El juego se desarrolla en sentido **horario**, comenzando siempre con el jugador humano, seguido de Rosie y, por último, Bender.
