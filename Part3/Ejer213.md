@@ -39,7 +39,7 @@ Para implementar la simulación, se deben considerar los siguientes elementos y 
 ---
 
 ### **Requerimientos**  
-- El algoritmo debe solicitar el número de turnos (`N`) al inicio de la simulación y validar que `N` esté entre 1 y 10. Si se ingresa un valor fuera de este rango, se debe mostrar un mensaje de error y solicitar nuevamente el número de turnos.
+- El algoritmo debe solicitar el número de turnos (`N`) al inicio de la simulación y validar que `N` esté entre 1 y 10. Si se ingresa un valor fuera de este rango, se debe mostrar un mensaje de error y solicitar nuevamente la entrada hasta que sea correcta.
 - Durante cada turno, cada usuario debe lanzar tres dados de 6 caras, y el sistema debe mostrar el resultado de cada dado para cada usuario.
 - El algoritmo debe utilizar estructuras de control iterativas del tipo **"Hacer... Repetir"** para gestionar los turnos.
 - No se deben usar instrucciones rompedoras (como `romper`, `continuar` u otra similar) para finalizar el ciclo.
@@ -55,15 +55,15 @@ Para facilitar la implementación y prueba del proyecto, se recomienda avanzar e
    - Probar la validación mostrando un mensaje de confirmación si `N` está en el rango correcto o un mensaje de error si no lo está.
 
 2. **Etapa 2: Simular el Lanzamiento de un Dado para un Usuario**
-   - Crear una función o procedimiento que simule el lanzamiento de un dado de 6 caras y muestre el resultado.
-   - Probar la función lanzando el dado varias veces y verificando que los resultados estén dentro del rango de 1 a 6 y que se muestren correctamente.
+   - Incluir en el código la lógica para simular el lanzamiento de un dado de 6 caras y mostrar el resultado.
+   - Probar el lanzamiento de un dado varias veces para verificar que los resultados estén dentro del rango de 1 a 6 y se muestren correctamente.
 
 3. **Etapa 3: Simular el Lanzamiento de Tres Dados para un Usuario**
-   - Ampliar la función de la Etapa 2 para lanzar tres dados y mostrar el resultado de cada uno en un turno.
-   - Probar el lanzamiento de tres dados varias veces para asegurarse de que cada resultado se muestra correctamente.
+   - Ampliar el código de la Etapa 2 para lanzar tres dados y mostrar el resultado de cada uno en un turno.
+   - Probar el lanzamiento de tres dados varias veces, asegurándose de que cada resultado se muestre correctamente.
 
 4. **Etapa 4: Agregar los Cuatro Usuarios Controlados por la Computadora**
-   - Crear una estructura que represente a los cuatro usuarios y adapte el código para que cada usuario lance sus tres dados en cada turno.
+   - Modificar el código para que cada uno de los cuatro usuarios realice su lanzamiento de tres dados en cada turno.
    - Probar el algoritmo simulando un solo turno para los cuatro usuarios, mostrando el resultado de cada dado para cada usuario.
 
 5. **Etapa 5: Implementar el Ciclo de Turnos**
@@ -74,3 +74,4 @@ Para facilitar la implementación y prueba del proyecto, se recomienda avanzar e
    - Revisar que el algoritmo muestre correctamente los resultados de cada dado en cada turno y de cada usuario.
    - Realizar ajustes finales en la presentación de los resultados para mejorar la claridad y la legibilidad.
    - Hacer pruebas adicionales con diferentes valores de `N` para asegurar la robustez y el correcto funcionamiento del programa.
+
