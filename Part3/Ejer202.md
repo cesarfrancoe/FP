@@ -1,7 +1,7 @@
-## **Problema 202: Cálculo del promedio de números positivos ingresados**
+## **Problema 202: Cálculo del Promedio de Números Positivos Ingresados**
 
 ### **Descripción**  
-Escribe un algoritmo que solicite al usuario ingresar números enteros de forma continua. El algoritmo debe calcular y mostrar el promedio de los números positivos ingresados. Si el usuario ingresa un número menor que 1, el ciclo debe finalizar y mostrarse el promedio de los números positivos ingresados hasta ese momento.
+Escribe un algoritmo que solicite al usuario ingresar números enteros de forma continua. El algoritmo debe calcular y mostrar el promedio de los números positivos ingresados. Si el usuario ingresa un número menor que 1, el ciclo debe finalizar y se mostrará el promedio de los números positivos ingresados hasta ese momento.
 
 ---
 
@@ -15,7 +15,7 @@ El problema consiste en solicitar números enteros al usuario, sumar los número
 4. Mostrar el promedio de los números positivos. Si no se ingresaron números positivos, mostrar un mensaje indicando que no hay datos para calcular el promedio.
 
 **Ejemplo**:  
-Supongamos que el usuario ingresa los números: 4, 7, -3, 8, y 0.  
+Supongamos que el usuario ingresa los números: 4, 7, 8, y 0.  
 - Números positivos ingresados: 4, 7, y 8  
 - La suma es: \( 4 + 7 + 8 = 19 \)  
 - El promedio es: \( 19 / 3 = 6.33 \)  
