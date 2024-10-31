@@ -1,4 +1,4 @@
-## **Problema 214: Simulador de Lanzamiento**
+## **Problema 215: Simulador de Lanzamiento**
 
 ### **Descripción**  
 Este problema consiste en simular el lanzamiento de 3 dados de 6 caras para cuatro usuarios controlados por la computadora. La simulación debe repetirse por un número `N` de turnos, ingresado al inicio. El valor de `N` debe estar entre 1 y 10. En cada turno, se debe mostrar el resultado de cada lanzamiento de cada dado para cada usuario.
