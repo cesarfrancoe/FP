@@ -15,14 +15,12 @@ Para implementar la simulación, se deben considerar los siguientes elementos y 
    - Cada usuario lanza tres dados de 6 caras en cada turno.
    - Las caras de los dados pueden tener los siguientes efectos, que serán mostrados en los resultados:
 
-     | **Valor del Dado** | **Símbolo** | **Acción**                             |
-     |--------------------|-------------|----------------------------------------|
-     | 1                  | L (Left)    | Pasa una ficha al jugador a la izquierda |
-     | 2                  | C (Center)  | Coloca una ficha en el centro            |
-     | 3                  | R (Right)   | Pasa una ficha al jugador a la derecha   |
-     | 4                  | * (Punto)   | Acción neutra                            |
-     | 5                  | * (Punto)   | Acción neutra                            |
-     | 6                  | * (Punto)   | Acción neutra                            |
+| Valor del dado | Símbolo | Significado | Acción a realizar                                      |
+|----------------|---------|-------------|-------------------------------------------------------|
+| 1              | L       | Left        | Pasa una ficha al jugador a la izquierda.             |
+| 2              | C       | Center      | Coloca una ficha en el centro, eliminándola del juego.|
+| 3              | R       | Right       | Pasa una ficha al jugador a la derecha.               |
+| 4, 5, 6        | *       | Punto       | Acción neutra, no se hace nada.                       |
 
 3. **Turnos**:
    - El número de turnos (`N`) se solicita al inicio de la simulación.
