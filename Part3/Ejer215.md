@@ -64,7 +64,7 @@ Para implementar la simulación, se deben considerar los siguientes elementos y 
    - Mostrar en pantalla el número del usuario actual (por ejemplo, "Usuario 1", "Usuario 2", etc.).
 
 4. **Etapa 4: Simulación de 3 lanzamientos por usuario**
-   - Para cada usuario, realizar tres lanzamientos de dado en cada turno.
+   - Para cada usuario, realizar tres lanzamientos de un dado en cada turno.
    - Mostrar en pantalla el número del lanzamiento actual (por ejemplo, "Lanzamiento 1", "Lanzamiento 2", etc.).
 
 5. **Etapa 5: Simulación del lanzamiento del dado de 6 caras**
