@@ -33,11 +33,11 @@ Supongamos que el usuario ingresa el código ISBN `0306406152`.
 
   Sumando todos los resultados:
   ```
-  S = 0 + 6 + 0 + 24 + 20 + 0 + 42 + 8 + 45 + 20 = 176
+  S = 0 + 6 + 0 + 24 + 20 + 0 + 42 + 8 + 45 + 20 = 165
   ```
 
 - Verificación:  
-  Dado que `176 % 11 == 0`, el código es válido.
+  Dado que `165 % 11 == 0`, el código es válido.
 
 El algoritmo debe mostrar: **"El código ISBN es válido."**
 
