@@ -1,7 +1,7 @@
 ## **Problema 215: Simulador de Lanzamiento de dados (LCR)**
 
 ### **Descripción**  
-Este problema consiste en simular el lanzamiento de 3 dados de 6 caras para cuatro usuarios controlados por la computadora. La simulación debe repetirse por un número `N` de turnos, ingresado al inicio. El valor de `N` debe estar entre 1 y 10. En cada turno, se debe mostrar el resultado de cada lanzamiento de cada dado para cada usuario.
+Este problema consiste en simular 3 veces el lanzamiento de un dado de 6 caras para cuatro usuarios controlados por la computadora. La simulación debe repetirse por un número `N` de turnos, ingresado al inicio. El valor de `N` debe estar entre 1 y 10. En cada turno, se debe mostrar el resultado de cada lanzamiento de cada dado para cada usuario.
 
 ---
 
@@ -12,7 +12,7 @@ Para implementar la simulación, se deben considerar los siguientes elementos y 
    - La simulación es para cuatro usuarios controlados por la computadora, identificados como "Computadora 1", "Computadora 2", "Computadora 3", y "Computadora 4".
 
 2. **Dados y Caras**:
-   - Cada usuario lanza tres dados de 6 caras en cada turno.
+   - Cada usuario lanza 3 veces un dado de 6 caras en cada turno.
    - Las caras de los dados pueden tener los siguientes efectos, que serán mostrados en los resultados:
 
 | Valor del dado | Símbolo | Significado | Acción a realizar                                      |
@@ -30,10 +30,10 @@ Para implementar la simulación, se deben considerar los siguientes elementos y 
 **Ejemplo de desarrollo del juego**:  
 1. La simulación solicita el número de turnos (`N`) para la simulación. Supongamos que `N = 3`.
 2. En el primer turno:
-   - Computadora 1 lanza tres dados y obtiene `L`, `C`, y `R`.
-   - Computadora 2 lanza tres dados y obtiene `* (Punto)`, `R`, y `C`.
-   - Computadora 3 lanza tres dados y obtiene `* (Punto)`, `L`, y `R`.
-   - Computadora 4 lanza tres dados y obtiene `C`, `* (Punto)`, y `L`.
+   - Computadora 1 lanza tres veces un dado y obtiene LCR
+   - Computadora 2 lanza tres veces un dado y obtiene *RC
+   - Computadora 3 lanza tres veces un dado y obtiene *LR
+   - Computadora 4 lanza tres veces un dado y obtiene C*L
    - El sistema muestra los resultados de los lanzamientos de cada dado para cada usuario en el primer turno.
 3. Este proceso se repite para los 3 turnos, mostrando únicamente los resultados de los dados en cada turno para cada usuario.
 
@@ -41,7 +41,7 @@ Para implementar la simulación, se deben considerar los siguientes elementos y 
 
 ### **Requerimientos**  
 - El algoritmo debe solicitar el número de turnos (`N`) al inicio de la simulación y validar que `N` esté entre 1 y 10. Si se ingresa cualquier valor fuera de este rango, se debe mostrar un mensaje de error y solicitar nuevamente la entrada hasta que sea correcta.
-- Durante cada turno, cada usuario debe lanzar tres dados de 6 caras, y el sistema debe mostrar el resultado de cada dado para cada usuario.
+- Durante cada turno, cada usuario debe lanzar tres veces un dado de 6 caras, y el sistema debe mostrar el resultado de cada dado para cada usuario.
 - El algoritmo debe utilizar estructuras de control iterativas del tipo **"Hacer... Repetir"** para gestionar los turnos.
 - No se deben usar instrucciones rompedoras (como `romper`, `continuar` u otra similar) para finalizar el ciclo.
 
