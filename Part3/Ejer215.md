@@ -63,7 +63,7 @@ Para implementar la simulación, se deben considerar los siguientes elementos y 
 
 4. **Etapa 4: Simulación de 3 lanzamientos por usuario**
    - Para cada usuario, realizar tres lanzamientos de un dado en cada turno.
-   - Mostrar en pantalla el número del lanzamiento actual (por ejemplo, "Lanzamiento 1", "Lanzamiento 2", etc.).
+   - Mostrar en pantalla los simbolos correspondientes a los 3 lanzamientos (por ejemplo, "LR*", "C**", "RCL", etc.).
 
 5. **Etapa 5: Simulación del lanzamiento del dado de 6 caras**
    - Implementar la lógica que simula el lanzamiento de un dado de 6 caras, generando un valor aleatorio entre 1 y 6.
