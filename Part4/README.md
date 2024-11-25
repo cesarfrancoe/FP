@@ -6,12 +6,15 @@ Las subrutinas, también conocidas como **funciones** o **procedimientos** (o **
 
 1. **Subrutinas sin parámetros y sin retorno de valores**: Son aquellas que no reciben parámetros al ser invocadas, y no devuelven ningún valor. Se utilizan para realizar tareas simples que no dependen de valores externos ni necesitan retornar un resultado.
 
-   **Ejemplo de pseudocódigo**:
+   **Declaración de la subrutina**:
    ```
    Subrutina Saludar()
        Imprimir "¡Hola, Mundo!"
    FinSubrutina
+   ```
 
+   **Llamado a la subrutina**:
+   ```
    Llamar Saludar()
    ```
 
@@ -21,12 +24,15 @@ Las subrutinas, también conocidas como **funciones** o **procedimientos** (o **
 
 2. **Subrutinas sin parámetros y con retorno de valores**: Estas subrutinas no reciben parámetros, pero sí devuelven un valor como resultado. Son útiles cuando la tarea realizada por la subrutina produce un resultado que debe ser utilizado en otro lugar del programa.
 
-   **Ejemplo de pseudocódigo**:
+   **Declaración de la subrutina**:
    ```
    Subrutina ObtenerValor()
        Retornar 42
    FinSubrutina
+   ```
 
+   **Llamado a la subrutina**:
+   ```
    Resultado = Llamar ObtenerValor()
    Imprimir Resultado
    ```
@@ -35,35 +41,41 @@ Las subrutinas, también conocidas como **funciones** o **procedimientos** (o **
 
 ---
 
-3. **Subrutinas con parámetros y sin retorno de valores**: Son subrutinas que reciben uno o más parámetros al ser invocadas, pero no devuelven ningún valor. Se utilizan cuando se necesita realizar una operación que depende de los parámetros, pero no es necesario devolver un resultado.
+3. **Subrutinas con parámetros y sin retorno de valores**: Son subrutinas que reciben uno o más **parámetros** al ser invocadas, pero no devuelven ningún valor. Los **argumentos** son los valores que se pasan a estos parámetros al momento de llamar a la subrutina. Se utilizan cuando se necesita realizar una operación que depende de los parámetros, pero no es necesario devolver un resultado.
 
-   **Ejemplo de pseudocódigo**:
+   **Declaración de la subrutina**:
    ```
    Subrutina ImprimirSuma(A, B)
        Resultado = A + B
        Imprimir Resultado
    FinSubrutina
+   ```
 
+   **Llamado a la subrutina**:
+   ```
    Llamar ImprimirSuma(5, 10)
    ```
 
-   - **Explicación**: La subrutina `ImprimirSuma` recibe dos parámetros, `A` y `B`, los suma y luego imprime el resultado sin devolver ningún valor.
+   - **Explicación**: La subrutina `ImprimirSuma` recibe dos **parámetros**, **A** y **B**, que son asignados a los **argumentos** 5 y 10 cuando se llama a la subrutina. Luego, se suma el valor de los parámetros y se imprime el resultado.
 
 ---
 
-4. **Subrutinas con parámetros y con retorno de valores**: Estas subrutinas reciben uno o más parámetros y, además, devuelven un valor como resultado. Son útiles cuando la operación realizada depende de los parámetros y el resultado debe ser utilizado en otra parte del programa.
+4. **Subrutinas con parámetros y con retorno de valores**: Estas subrutinas reciben uno o más **parámetros** y, además, devuelven un valor como resultado. Los **argumentos** son los valores que se pasan a esos parámetros al invocar la subrutina. Son útiles cuando la operación realizada depende de los parámetros y el resultado debe ser utilizado en otra parte del programa.
 
-   **Ejemplo de pseudocódigo**:
+   **Declaración de la subrutina**:
    ```
    Subrutina Multiplicar(A, B)
        Retornar A * B
    FinSubrutina
+   ```
 
+   **Llamado a la subrutina**:
+   ```
    Resultado = Llamar Multiplicar(4, 3)
    Imprimir Resultado
    ```
 
-   - **Explicación**: La subrutina `Multiplicar` recibe dos parámetros, los multiplica y devuelve el resultado, que luego se imprime.
+   - **Explicación**: La subrutina `Multiplicar` recibe dos **parámetros**, **A** y **B**, que corresponden a los **argumentos** 4 y 3 cuando se llama a la subrutina. La subrutina realiza la multiplicación y devuelve el resultado, que luego se imprime.
 
 ---
 
@@ -84,8 +96,15 @@ Las subrutinas, también conocidas como **funciones** o **procedimientos** (o **
 - Es importante nombrar las subrutinas de manera clara, para que su propósito sea comprensible con solo ver su nombre.
 - En algunos lenguajes, las subrutinas pueden tener un **valor de retorno**. Si una subrutina no devuelve un valor, se denomina **procedimiento**.
 
---- 
+---
 
 ### **Resumen**
 
-Las subrutinas (o **métodos** en el paradigma orientado a objetos) son una herramienta fundamental para la organización, reutilización y modularización del código. Existen diferentes tipos, como las que no reciben parámetros y no retornan valores, las que no reciben parámetros pero retornan valores, las que reciben parámetros pero no retornan valores, y las que reciben parámetros y retornan valores. Utilizar subrutinas correctamente permite escribir programas más eficientes, legibles y fáciles de mantener.
+Las subrutinas (o **métodos** en el paradigma orientado a objetos) son bloques de código reutilizables que permiten modularizar y organizar programas de manera más eficiente. Existen cuatro tipos principales de subrutinas:
+
+1. **Sin parámetros y sin retorno de valores**
+2. **Sin parámetros y con retorno de valores**
+3. **Con parámetros y sin retorno de valores**
+4. **Con parámetros y con retorno de valores**
+
+El uso adecuado de las subrutinas facilita la reutilización del código, mejora la legibilidad del programa y facilita su mantenimiento.
