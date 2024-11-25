@@ -1,4 +1,4 @@
-### **Subrutinas en Programación**
+### **Subrutinas**
 
 Las subrutinas, también conocidas como **funciones** o **procedimientos** (o **métodos** en el paradigma orientado a objetos), son bloques de código que realizan una tarea específica y pueden ser llamados desde distintas partes de un programa. Las subrutinas permiten la reutilización del código, la organización y la modularización de los programas, lo que mejora la claridad y el mantenimiento del código.
 
