@@ -25,17 +25,17 @@
 
 **309.** **doubleFactorial**: Implementa una función que reciba un número entero y retorne su doble factorial.
 
-**310.** **positiveDivisorsCount**: Implementa una función que reciba un número entero y retorne la cantidad de divisores positivos que tiene.
+**310.** **posDivsCount**: Implementa una función que reciba un número entero y retorne la cantidad de divisores positivos que tiene.
 
-**311.** **negativeDivisorsCount**: Implementa una función que reciba un número entero y retorne la cantidad de divisores negativos que tiene.
+**311.** **negDivsCount**: Implementa una función que reciba un número entero y retorne la cantidad de divisores negativos que tiene.
 
-**312.** **divisorsCount**: Implementa una función que reciba un número entero y retorne la cantidad de divisores que tiene.
+**312.** **divsCount**: Implementa una función que reciba un número entero y retorne la cantidad de divisores que tiene.
 
-**313.** **positiveDivisorsSum**: Implementa una función que reciba un número entero y retorne la suma de sus divisores positivos.
+**313.** **posDivsSum**: Implementa una función que reciba un número entero y retorne la suma de sus divisores positivos.
 
-**314.** **negativeDivisorsSum**: Implementa una función que reciba un número entero y retorne la suma de sus divisores negativos.
+**314.** **negDivsSum**: Implementa una función que reciba un número entero y retorne la suma de sus divisores negativos.
 
-**315.** **divisorsSum**: Implementa una función que reciba un número entero y retorne la suma de sus divisores.
+**315.** **divsSum**: Implementa una función que reciba un número entero y retorne la suma de sus divisores.
 
 **316.** **isComposite**: Implementa una función que reciba un número entero y retorne si es un número compuesto.
 
