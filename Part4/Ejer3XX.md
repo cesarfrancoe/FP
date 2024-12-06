@@ -1,6 +1,6 @@
 **Instrucciones Generales:**
 
-- Todas las funciones deben ser creadas en un módulo aparte llamado **MathOper** (Math Operations).
+- Todas las funciones deben ser creadas en un módulo aparte llamado **MathOper** (Mathematical operations).
 - Para cada ejercicio, se debe implementar un archivo adicional con la numeración dada que prueba la función correspondiente.
 
 ---
