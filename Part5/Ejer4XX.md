@@ -6,21 +6,31 @@
 ---
 
 **400.** 
-- **sum**: Construya una función que reciba un arreglo de números enteros y retorne la sumatoria de los elementos.
-- **mult**: Construya una función que reciba un arreglo de números enteros y retorne la multiplicatoria de los elementos.
+- **add**: Construya una función que reciba un arreglo de números enteros y retorne la sumatoria de los elementos.
+- **mul**: Construya una función que reciba un arreglo de números enteros y retorne la multiplicatoria de los elementos.
 - **avg**: Construya una función que reciba un arreglo de números enteros y retorne la media aritmética de los elementos.
 
 **401.** 
-- **sum**: Construya una función que reciba un arreglo de números reales y retorne la sumatoria de los elementos.
-- **mult**: Construya una función que reciba un arreglo de números reales y retorne la multiplicatoria de los elementos.
+- **add**: Construya una función que reciba un arreglo de números reales y retorne la sumatoria de los elementos.
+- **mul**: Construya una función que reciba un arreglo de números reales y retorne la multiplicatoria de los elementos.
 - **avg**: Construya una función que reciba un arreglo de números reales y retorne la media aritmética de los elementos.
 
+**402.**
+- **add**: Construya una función que reciba un arreglo de números enteros y un numero entero y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + num \).
+- **sub**: Construya una función que reciba un arreglo de números enteros y un numero entero y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> - num \).
+- **mul**: Construya una función que reciba un arreglo de números enteros y un numero entero y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> * num \).
+
+**403.**
+- **add**: Construya una función que reciba un arreglo de números reales y un numero real y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + num \).
+- **sub**: Construya una función que reciba un arreglo de números reales y un numero real y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> - num \).
+- **mul**: Construya una función que reciba un arreglo de números reales y un numero real y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> * num \).
+
 **405.** 
-- **sum**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + B<sub>i</sub> \).
+- **add**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + B<sub>i</sub> \).
 - **mult**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> * B<sub>i</sub> \).
 
 **406.** 
-- **sum**: Construya una función que reciba dos arreglos de números reales y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + B<sub>i</sub> \).
+- **add**: Construya una función que reciba dos arreglos de números reales y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + B<sub>i</sub> \).
 - **mult**: Construya una función que reciba dos arreglos de números reales y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> * B<sub>i</sub> \).
 
 **407.** **parseFloatArray**: Construlla una función que reciba un arreglo de numeros enteros y retorne un arreglo de números reales.
