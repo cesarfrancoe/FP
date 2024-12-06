@@ -5,19 +5,21 @@
 
 ---
 
-**400.** **sumArray**: Construya una función que reciba un arreglo de números enteros y retorne la sumatoria de los elementos.
+**400.** **sum**: Construya una función que reciba un arreglo de números enteros y retorne la sumatoria de los elementos.
+**mult**: Construya una función que reciba un arreglo de números enteros y retorne la multiplicatoria de los elementos.
+**avg**: Construya una función que reciba un arreglo de números enteros y retorne la media aritmética de los elementos.
 
-**401.** **sumArrayReal**: Construya una función que reciba un arreglo de números reales y retorne la sumatoria de los elementos.
+**401.** **sumFloats**: Construya una función que reciba un arreglo de números reales y retorne la sumatoria de los elementos.
+**multFloats**: Construya una función que reciba un arreglo de números reales y retorne la multiplicatoria de los elementos.
+**avg**: Construya una función que reciba un arreglo de números reales y retorne la media aritmética de los elementos.
 
-**402.** **multiplyArray**: Construya una función que reciba un arreglo de números enteros y retorne la multiplicatoria de los elementos.
+**405.** **sum**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R = A + B \).
+**mult**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R = A \times B \).
 
-**403.** **meanA**: Construya una función que reciba un arreglo de números enteros y retorne la media aritmética de los elementos.
+**406.** **sum**: Construya una función que reciba dos arreglos de números reales y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R = A + B \).
+**mult**: Construya una función que reciba dos arreglos de números reales y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R = A \times B \).
 
-**404.** **meanAReal**: Construya una función que reciba un arreglo de números reales y retorne la media aritmética de los elementos.
-
-**405.** **addArrays**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R = A + B \).
-
-**406.** **multiplyArrays**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R = A \times B \).
+**407.** **parseFloatArray**: Construlla una función que reciba un arreglo de numeros enteros y retorne un arreglo de números reales.
 
 **407.** **weightedMean**: Construya una función que reciba dos arreglos de números reales y retorne la media ponderada de los elementos.
 
