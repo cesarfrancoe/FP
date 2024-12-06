@@ -11,8 +11,8 @@
 - **avg**: Construya una función que reciba un arreglo de números enteros y retorne la media aritmética de los elementos.
 
 **401.** 
-- **sumFloats**: Construya una función que reciba un arreglo de números reales y retorne la sumatoria de los elementos.
-- **multFloats**: Construya una función que reciba un arreglo de números reales y retorne la multiplicatoria de los elementos.
+- **sum**: Construya una función que reciba un arreglo de números reales y retorne la sumatoria de los elementos.
+- **mult**: Construya una función que reciba un arreglo de números reales y retorne la multiplicatoria de los elementos.
 - **avg**: Construya una función que reciba un arreglo de números reales y retorne la media aritmética de los elementos.
 
 **405.** 
