@@ -16,12 +16,12 @@
 - **avg**: Construya una función que reciba un arreglo de números reales y retorne la media aritmética de los elementos.
 
 **405.** 
-- **sum**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A + B \).
-- **mult**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R = A * B \).
+- **sum**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + B<sub>i</sub> \).
+- **mult**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> * B<sub>i</sub> \).
 
 **406.** 
-- **sum**: Construya una función que reciba dos arreglos de números reales y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R = A + B \).
-- **mult**: Construya una función que reciba dos arreglos de números reales y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R = A * B \).
+- **sum**: Construya una función que reciba dos arreglos de números reales y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + B<sub>i</sub> \).
+- **mult**: Construya una función que reciba dos arreglos de números reales y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> * B<sub>i</sub> \).
 
 **407.** **parseFloatArray**: Construlla una función que reciba un arreglo de numeros enteros y retorne un arreglo de números reales.
 
