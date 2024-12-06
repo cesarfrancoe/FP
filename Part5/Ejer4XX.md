@@ -51,15 +51,15 @@
 
 **419.** **repeatedNumbers**: Construya una función que reciba como parámetro un arreglo de números enteros y retorne un nuevo arreglo con los números cuya frecuencia de aparición en el arreglo de entrada sea mayor a 1.
 
-**420.** **frequencyArray**: Construya una función que reciba como parámetro un arreglo de números enteros y retorne un nuevo arreglo con la frecuencia de cada número encontrado en cada posición del arreglo.
+**420.** **frequency**: Construya una función que reciba como parámetro un arreglo de números enteros y retorne un nuevo arreglo con la frecuencia de cada número encontrado en cada posición del arreglo.
 
 **421.** **removeDuplicates**: Construya una función que reciba como parámetro un arreglo de números enteros y retorne un nuevo arreglo con todos los números del arreglo original sin repetidos y conservando el orden inicial.
 
-**422.** **sortArray**: Construya una función que reciba como parámetro un arreglo de números enteros y un valor lógico, y retorne otro arreglo con los números ordenados en forma ascendente o no ascendente (descendente).
+**422.** **sort**: Construya una función que reciba como parámetro un arreglo de números enteros y un valor lógico, y retorne otro arreglo con los números ordenados en forma ascendente o no ascendente (descendente).
 
-**423.** **unionArrays**: Construya una función que reciba como parámetros dos arreglos de números enteros y retorne un arreglo con la unión.
+**423.** **union**: Construya una función que reciba como parámetros dos arreglos de números enteros y retorne un arreglo con la unión.
 
-**424.** **intersectionArrays**: Construya una función que reciba dos arreglos de números enteros y retorne un arreglo con la intersección.
+**424.** **intersection**: Construya una función que reciba dos arreglos de números enteros y retorne un arreglo con la intersección.
 
 **425.** **generateRandomNumbers**: Construya una función que reciba como parámetros un número \( n \), un límite inferior \( limInf \), un límite superior \( limSup \) (números enteros) y un valor lógico, y retorne un arreglo con \( n \) números aleatorios con o sin números repetidos (según el valor lógico de entrada).
 
