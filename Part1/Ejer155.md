@@ -1,4 +1,4 @@
-### Problema 055: El computador adivina un número
+### Problema 155: El computador adivina un número
 
 **Descripción del problema:**
 
