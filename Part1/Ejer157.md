@@ -1,4 +1,4 @@
-### **Problema 057: Validación del código ISBN de 10 Dígitos**
+### **Problema 157: Validación del código ISBN de 10 Dígitos**
 
 **Descripción del problema:**
 
