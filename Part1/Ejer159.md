@@ -1,4 +1,4 @@
-### **Problema 059: Ordenar dos números enteros**
+### **Problema 159: Ordenar dos números enteros**
 
 **Descripción del problema:**
 
