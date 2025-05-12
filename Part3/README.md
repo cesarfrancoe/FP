@@ -108,3 +108,18 @@ Las subrutinas (o **métodos** en el paradigma orientado a objetos) son bloques 
 4. **Con parámetros y con retorno de valores**
 
 El uso adecuado de las subrutinas facilita la reutilización del código, mejora la legibilidad del programa y facilita su mantenimiento.
+
+Aquí tienes una **tabla resumen** para incluir al final del documento, que sintetiza los cuatro tipos de subrutinas:
+
+---
+
+### **Tabla Resumen de Tipos de Subrutinas**
+
+| Tipo | ¿Recibe Parámetros? | ¿Devuelve Valor? | Ejemplo              | Comentario                                        |
+| ---- | ------------------- | ---------------- | -------------------- | ------------------------------------------------- |
+| 1    | ❌ No                | ❌ No             | `Saludar()`          | Solo ejecuta una acción (ej. imprimir un mensaje) |
+| 2    | ❌ No                | ✅ Sí             | `ObtenerValor()`     | Devuelve un valor fijo o calculado                |
+| 3    | ✅ Sí                | ❌ No             | `ImprimirSuma(A, B)` | Usa parámetros para operar, pero no retorna valor |
+| 4    | ✅ Sí                | ✅ Sí             | `Multiplicar(A, B)`  | Usa parámetros y retorna un valor                 |
+
+
