@@ -109,10 +109,6 @@ Las subrutinas (o **métodos** en el paradigma orientado a objetos) son bloques 
 
 El uso adecuado de las subrutinas facilita la reutilización del código, mejora la legibilidad del programa y facilita su mantenimiento.
 
-Aquí tienes una **tabla resumen** para incluir al final del documento, que sintetiza los cuatro tipos de subrutinas:
-
----
-
 ### **Tabla Resumen de Tipos de Subrutinas**
 
 | Tipo | ¿Recibe Parámetros? | ¿Devuelve Valor? | Ejemplo              | Comentario                                        |
