@@ -1,4 +1,4 @@
-# 🧭 **Guía paso a paso – Ejercicio 400 (Suma de enteros en un arreglo)**
+# 🧭 **Guía paso a paso – Ejercicio 400**
 
 ---
 
