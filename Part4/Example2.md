@@ -41,8 +41,7 @@ public class MathOper {
 public class MathOper {
 
     static int[] add(int[] nums, int value) {
-        int size = nums.length;
-        int[] result = new int[size];
+        int[] result = new int[nums.length;];
 
         // Aquí llenaremos el nuevo arreglo
     }
@@ -61,10 +60,9 @@ public class MathOper {
 public class MathOper {
 
     static int[] add(int[] nums, int value) {
-        int size = nums.length;
-        int[] result = new int[size];
+        int[] result = new int[nums.length;];
 
-        for (int k = 0; k < size; k += 1) {
+        for (int k = 0; k < nums.length;; k += 1) {
             result[k] = nums[k] + value;
         }
 
@@ -136,7 +134,7 @@ numbers = new int[size];
 ### ✅ Paso 4: Leer los valores que ingresa el usuario y asignarlos a una posición del arreglo
 
 ```java
-for (int k = 0; k < size; k += 1) {
+for (int k = 0; k < numbers.length;; k += 1) {
     screen.print("Enter number " + (k + 1) + ": ");
     numbers[k] = Integer.parseInt(keyboard.nextLine());
 }
@@ -187,7 +185,7 @@ public class Ejer402 {
 
         numbers = new int[size];
 
-        for (int k = 0; k < size; k += 1) {
+        for (int k = 0; k < numbers.length;; k += 1) {
             screen.print("Enter number " + (k + 1) + ": ");
             numbers[k] = Integer.parseInt(keyboard.nextLine());
         }
@@ -213,8 +211,7 @@ public class Ejer402 {
 public class MathOper {
 
     static int[] add(int[] nums, int value) {
-        int size = nums.length;
-        int[] result = new int[size];
+        int[] result = new int[nums.length;];
 
         for (int k = 0; k < size; k += 1) {
             result[k] = nums[k] + value;
