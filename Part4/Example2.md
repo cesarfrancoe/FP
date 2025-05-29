@@ -49,7 +49,7 @@ public class MathOper {
 }
 ```
 
-* `size`: tamaño del arreglo original.
+* `nums.length`: tamaño del arreglo original.
 * `result`: nuevo arreglo donde se almacenarán los valores calculados.
 
 ---
@@ -213,7 +213,7 @@ public class MathOper {
     static int[] add(int[] nums, int value) {
         int[] result = new int[nums.length;];
 
-        for (int k = 0; k < size; k += 1) {
+        for (int k = 0; k < nums.length; k += 1) {
             result[k] = nums[k] + value;
         }
 
