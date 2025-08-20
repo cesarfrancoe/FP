@@ -75,7 +75,8 @@ En este punto, el programa no hace nada, pero la estructura mínima ya está def
 
 * **`class`** es una **palabra reservada** del lenguaje de programación Java utilizada para crear un contenedor de código de tipo clase (class). Todo lo que pertenezca a este contenedor debe ir dentro de su bloque de código delimitado por llaves `{ }`.
 * **`Program`** es el **identificador** de este contenedor y **es altamente recomendado** escribirlo usando **Upper Camel Case**.
-
+* Cada contenedor tiene un **bloque de código** delimitado por llaves `{ }`, dentro del cual se ubican todo lo que pertenezca a este.
+  
 Dentro de este contenedor se debe incluir la **función principal (main function)** llamada `main`. Esta función es obligatoria en todos los programas y señala el punto donde inicia la ejecución.
 
 ### Ejemplo con la función principal:
@@ -90,8 +91,6 @@ class Program {
 
 ### Explicación
 
-* `class Program` es el **contenedor de código de tipo clase (class)**.
-* `class` es una **palabra reservada** del lenguaje de programación Java.
 * `Program` es el **identificador** de este contenedor y **es altamente recomendado** escribirlo usando **Upper Camel Case**.
 * Dentro de este contenedor se encuentra la **función principal (main function)** llamada `main`.
 * `main` es el **identificador** de esta función y **es altamente recomendado** escribirlo usando **camelCase**.
