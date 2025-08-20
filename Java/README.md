@@ -63,7 +63,7 @@ En el lenguaje de programación Java, todo programa debe escribirse dentro de un
 
 Todo contenedor de código debe tener un **bloque de código**, el cual se escribe entre llaves `{ }`. Dentro de ese bloque se colocarán los elementos que pertenezcan al contenedor.
 
-### Ejemplo de contenedor vacío:
+### Ejemplo de contenedor tipo clase vacío:
 
 ```java
 class Program {
@@ -73,13 +73,13 @@ class Program {
 
 En este punto, el programa no hace nada, pero la estructura mínima ya está definida: un contenedor de código de tipo clase (class) con su identificador y su bloque de código.
 
-* **`class`** es una **palabra reservada** del lenguaje de programación Java utilizada para crear un contenedor de código de tipo clase (class). Todo lo que pertenezca a este contenedor debe ir dentro de su bloque de código delimitado por llaves `{ }`.
+* **`class`** es una **palabra reservada** del lenguaje de programación Java utilizada para crear un contenedor de código de tipo clase (class).
 * **`Program`** es el **identificador** de este contenedor y **es altamente recomendado** escribirlo usando **Upper Camel Case**.
-* Cada contenedor tiene un **bloque de código** delimitado por llaves `{ }`, dentro del cual se ubican todo lo que pertenezca a este.
+* Cada contenedor tiene un **bloque de código** delimitado por llaves `{ }`, dentro del cual se ubican todo lo que pertenezca a este contenedor.
   
 Dentro de este contenedor se debe incluir la **función principal (main function)** llamada `main`. Esta función es obligatoria en todos los programas y señala el punto donde inicia la ejecución.
 
-### Ejemplo con la función principal:
+### Ejemplomcon un contenedor tipo función especial:
 
 ```java
 class Program {
@@ -91,7 +91,7 @@ class Program {
 
 ### Explicación
 
-* Dentro de este contenedor `Program` se encuentra un contenedor tipo **función principal (main function)** llamada `main`.
+* Dentro de este contenedor  de clase `Program` se encuentra un contenedor tipo **función** llamada `main` (main es un contenedor especial tipo funcion).
 * Cada contenedor tiene un **bloque de código** delimitado por llaves `{ }`, dentro del cual se ubican las instrucciones correspondientes.
 
 ### Notas sobre la main function
