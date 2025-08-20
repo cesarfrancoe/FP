@@ -91,9 +91,7 @@ class Program {
 
 ### Explicación
 
-* `Program` es el **identificador** de este contenedor y **es altamente recomendado** escribirlo usando **Upper Camel Case**.
-* Dentro de este contenedor se encuentra la **función principal (main function)** llamada `main`.
-* `main` es el **identificador** de esta función y **es altamente recomendado** escribirlo usando **camelCase**.
+* Dentro de este contenedor `Program` se encuentra un contenedor tipo **función principal (main function)** llamada `main`.
 * Cada contenedor tiene un **bloque de código** delimitado por llaves `{ }`, dentro del cual se ubican las instrucciones correspondientes.
 
 ### Notas sobre la main function
