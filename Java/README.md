@@ -79,7 +79,7 @@ En este punto, el programa no hace nada, pero la estructura mínima ya está def
   
 Dentro de este contenedor se debe incluir la **función principal (main function)** llamada `main`. Esta función es obligatoria en todos los programas y señala el punto donde inicia la ejecución.
 
-### Ejemplomcon un contenedor tipo función especial:
+### Ejemplom de contenedor tipo función (dentro de un contenedor tipo clase):
 
 ```java
 class Program {
