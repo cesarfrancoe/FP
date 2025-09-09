@@ -44,7 +44,7 @@ public class SysIO {
 
 ---
 
-## 3) ¿Cómo usar `SysIO` heredando en tu programa?
+## 3) ¿Cómo usar `SysIO` en tus programa?
 
 Creamos una clase llamada `Program.java` que **extiende** de `SysIO`.
 De esta manera, podemos usar directamente `readLine()` y `writeLine()`.
