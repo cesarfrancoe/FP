@@ -21,9 +21,9 @@
 - **mul**: Construya una función que reciba un arreglo de números enteros y un numero entero y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> * num \).
 
 **403.**
-- **add**: Construya una función que reciba un arreglo de números reales y un numero real y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + num \).
-- **sub**: Construya una función que reciba un arreglo de números reales y un numero real y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> - num \).
-- **mul**: Construya una función que reciba un arreglo de números reales y un numero real y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> * num \).
+- **add2**: Construya una función que reciba un arreglo de números reales y un numero real y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + num \).
+- **sub2**: Construya una función que reciba un arreglo de números reales y un numero real y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> - num \).
+- **mul2**: Construya una función que reciba un arreglo de números reales y un numero real y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> * num \).
 
 **405.** 
 - **add**: Construya una función que reciba dos arreglos de números enteros y retorne un nuevo arreglo con el resultado de la siguiente operación: \( R<sub>i</sub> = A<sub>i</sub> + B<sub>i</sub> \).
