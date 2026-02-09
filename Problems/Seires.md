@@ -30,7 +30,9 @@ Para cada serie, responde:
 Observa las siguientes series:
 
 a) 1, 3, 6, 10, 15
+
 b) 2, 6, 12, 20, 30
+
 c) 100, 90, 80, 70, 60
 
 Para cada una:
