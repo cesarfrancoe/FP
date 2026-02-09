@@ -11,8 +11,11 @@ En muchos problemas computacionales, el primer paso no es escribir código, sino
 Analiza cada una de las siguientes series numéricas:
 
 a) 2, 4, 6, 8, 10
+
 b) 1, 4, 9, 16, 25
+
 c) 5, 10, 20, 40, 80
+
 d) 3, 6, 9, 12, 15
 
 Para cada serie, responde:
@@ -41,6 +44,7 @@ Para cada una:
 Considera las siguientes secuencias:
 
 a) 1, 4, 3, 6, 5, 8
+
 b) 2, 4, 8, 10, 20, 22
 
 Actividades:
