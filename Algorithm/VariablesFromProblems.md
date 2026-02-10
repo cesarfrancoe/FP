@@ -6,7 +6,7 @@
 
 ## 1. Propósito de esta guía
 
-El propósito de esta guía es ayudar al estudiante a **identificar correctamente las variables** que se necesitan para resolver un problema, **antes** de escribir pseudocódigo.
+El propósito de esta guía es ayudar a **identificar correctamente las variables** que se necesitan para resolver un problema, **antes** de escribir pseudocódigo.
 
 Aprender a identificar variables es un paso fundamental, ya que:
 
