@@ -1,15 +1,19 @@
 # Pseudocódigo
 
+**Curso: Fundamentos de Programación**
+
+---
+
 ## 1. Introducción
 
 El presente documento introduce el **pseudocódigo** como herramienta fundamental para el desarrollo de la lógica de programación. Su propósito es que el estudiante aprenda a **describir algoritmos de forma clara, ordenada y comprensible**, antes de trabajar con lenguajes de programación formales.
 
 El enfoque del documento se centra en:
 
-* La identificación de entradas, procesos y salidas.
-* El uso del pseudocódigo como lenguaje descriptivo.
-* El empleo de notación matemática y lógica estándar.
-* El uso de estructuras de control secuenciales y selectivas.
+* Identificación de entradas, procesos y salidas
+* Uso del pseudocódigo como lenguaje descriptivo
+* Empleo de notación matemática y lógica estándar
+* Uso de estructuras de control secuenciales y selectivas
 
 ---
 
@@ -19,9 +23,9 @@ El pseudocódigo es una forma de describir un algoritmo utilizando **lenguaje na
 
 El pseudocódigo:
 
-* No se ejecuta.
-* No se compila.
-* No pertenece a ningún lenguaje de programación.
+* No se ejecuta
+* No se compila
+* No pertenece a ningún lenguaje de programación
 
 Su función es **representar la lógica de una solución**, no su implementación técnica.
 
@@ -31,19 +35,21 @@ Su función es **representar la lógica de una solución**, no su implementació
 
 Todo algoritmo descrito en pseudocódigo debe presentar:
 
-* Un bloque de variables.
-* Un inicio claramente definido.
-* Un conjunto ordenado de instrucciones.
-* Un final explícito.
+* Un bloque de variables
+* Un inicio claramente definido
+* Un conjunto ordenado de instrucciones
+* Un final explícito
 
 Estructura general:
 
+```text
 VARIABLES
-  declaración de variables
+    declaración de variables
 
 INICIO
-  instrucciones
+    instrucciones
 FIN
+```
 
 Las instrucciones se ejecutan **en el orden en que aparecen**, de arriba hacia abajo.
 
@@ -59,8 +65,10 @@ Este bloque es **descriptivo** y se escribe **antes del INICIO**, ya que no repr
 
 Forma general:
 
+```text
 VARIABLES
-  nombreVariable COMO tipoDeDato
+    nombreVariable COMO tipoDeDato
+```
 
 ---
 
@@ -69,22 +77,22 @@ VARIABLES
 En este curso se trabajarán los siguientes tipos de datos:
 
 * **Número entero**
-  Representa valores numéricos sin parte decimal.
+  Valores numéricos sin parte decimal.
 
 * **Número real**
-  Representa valores numéricos que pueden contener parte decimal.
+  Valores numéricos que pueden contener parte decimal.
 
 * **Carácter**
-  Representa un único símbolo.
+  Un único símbolo.
 
 * **Cadena de caracteres**
-  Representa una secuencia de caracteres (texto).
+  Texto.
 
 * **Lógico (booleano)**
-  Representa valores de verdad, que solo pueden ser **Verdadero** o **Falso**.
-  En este curso, el tipo lógico se entiende en sentido **booleano**, es decir, desde la lógica, y **no** como representación binaria interna del computador.
+  Representa valores de verdad: **Verdadero** o **Falso**.
+  En este curso, el tipo lógico se entiende en sentido **booleano**, no como representación binaria interna del computador.
 
-Estos tipos de datos se utilizan para **razonar sobre la información**, no para validar sintaxis ni estudiar su representación física.
+Estos tipos de datos se utilizan para **razonar sobre la información**, no para validar sintaxis ni estudiar representación física.
 
 ---
 
@@ -98,8 +106,10 @@ Se representa mediante la instrucción:
 
 Ejemplos:
 
-* LEER edad
-* LEER nota
+```text
+LEER edad
+LEER nota
+```
 
 Todo dato que se utilice en el algoritmo debe haber sido leído previamente.
 
@@ -113,8 +123,10 @@ Se expresan mediante asignaciones.
 
 Ejemplos:
 
-* promedio ← (nota1 + nota2 + nota3) / 3
-* total ← cantidad × precio
+```text
+promedio ← (nota1 + nota2 + nota3) / 3
+total ← cantidad × precio
+```
 
 Primero se realiza el cálculo y luego se asigna el resultado a la variable correspondiente.
 
@@ -130,8 +142,10 @@ Se representa mediante la instrucción:
 
 Ejemplos:
 
-* ESCRIBIR promedio
-* ESCRIBIR "Aprueba"
+```text
+ESCRIBIR promedio
+ESCRIBIR "Aprueba"
+```
 
 Todo algoritmo debe producir al menos una salida.
 
@@ -152,17 +166,21 @@ La estructura selectiva permite ejecutar diferentes instrucciones dependiendo de
 
 Forma general:
 
+```text
 SI (condición) ENTONCES
-  instrucciones
+    instrucciones
 FIN SI
+```
 
 Con alternativa:
 
+```text
 SI (condición) ENTONCES
-  instrucciones
+    instrucciones
 SINO
-  instrucciones
+    instrucciones
 FIN SI
+```
 
 Solo uno de los bloques se ejecuta.
 
@@ -174,17 +192,19 @@ Las condiciones se expresan utilizando **notación matemática y lógica estánd
 
 Simbología utilizada:
 
-* > mayor que
-* <  menor que
-* ≥  mayor o igual que
-* ≤  menor o igual que
-* =  igual a
-* ≠  diferente de
+* `>`  mayor que
+* `<`  menor que
+* `≥`  mayor o igual que
+* `≤`  menor o igual que
+* `=`  igual a
+* `≠`  diferente de
 
 Ejemplos:
 
-* edad ≥ 18
-* nota < 3.0
+```text
+edad ≥ 18
+nota < 3.0
+```
 
 Estas expresiones deben leerse en lenguaje natural.
 
@@ -192,36 +212,29 @@ Estas expresiones deben leerse en lenguaje natural.
 
 ## 10. Ejemplo completo de algoritmo
 
+```text
 VARIABLES
-  nota COMO número real
+    nota COMO número real
 
 INICIO
-  LEER nota
+    LEER nota
 
-  SI (nota ≥ 3.0) ENTONCES
-    ESCRIBIR "Aprueba"
-  SINO
-    ESCRIBIR "Reprueba"
-  FIN SI
-
+    SI (nota ≥ 3.0) ENTONCES
+        ESCRIBIR "Aprueba"
+    SINO
+        ESCRIBIR "Reprueba"
+    FIN SI
 FIN
+```
 
 ---
 
 ## 11. Reglas generales para escribir pseudocódigo
 
-* Usar nombres de variables claros y representativos.
-* Declarar todas las variables en el bloque VARIABLES.
-* Leer los datos antes de utilizarlos.
-* Usar notación matemática y lógica.
-* Mantener una escritura clara y ordenada.
-* Recordar que el pseudocódigo **describe**, no ejecuta.
-
----
-
-## 12. Cierre
-
-El pseudocódigo permite desarrollar la lógica de programación sin depender de la sintaxis de ningún lenguaje. Dominar sus elementos básicos es un paso esencial para aprender a resolver problemas algorítmicos de forma estructurada.
-
-Este documento establece la base conceptual necesaria para abordar, en una etapa posterior, la resolución sistemática de problemas utilizando pseudocódigo.
+* Usar nombres de variables claros y representativos
+* Declarar todas las variables en el bloque VARIABLES
+* Leer los datos antes de utilizarlos
+* Usar notación matemática y lógica
+* Mantener una escritura clara y ordenada
+* Recordar que el pseudocódigo **describe**, no ejecuta
 
