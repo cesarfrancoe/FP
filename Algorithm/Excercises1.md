@@ -1,11 +1,4 @@
-# Taller en clase – Introducción al pseudocódigo
-
-**Curso: Fundamentos de Programación**
-**Carácter:** No calificable
-**Modalidad:** Trabajo individual o en parejas
-**Duración sugerida:** 60–90 minutos
-
----
+# Taller – Introducción al pseudocódigo
 
 ## Objetivo del taller
 
