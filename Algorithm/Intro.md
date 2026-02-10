@@ -1,9 +1,5 @@
 # Pseudocódigo
 
-**Curso: Fundamentos de Programación**
-
----
-
 ## 1. Introducción
 
 El presente documento introduce el **pseudocódigo** como herramienta fundamental para el desarrollo de la lógica de programación. Su propósito es que el estudiante aprenda a **describir algoritmos de forma clara, ordenada y comprensible**, antes de trabajar con lenguajes de programación formales.
