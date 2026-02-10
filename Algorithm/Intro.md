@@ -1,4 +1,4 @@
-# Pseudocódigo y estructuras de control selectivas
+# Pseudocódigo
 
 **Curso: Fundamentos de Programación**
 
