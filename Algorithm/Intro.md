@@ -43,6 +43,7 @@ Todo algoritmo descrito en pseudocódigo debe presentar:
 Estructura general:
 
 ```text
+ALGORITMO
 VARIABLES
     declaración de variables
 
@@ -115,22 +116,63 @@ Todo dato que se utilice en el algoritmo debe haber sido leído previamente.
 
 ---
 
-## 6. Procesos
+## 6. Procesos y asignación
 
 Los procesos son las operaciones que transforman los datos de entrada en resultados.
 
-Se expresan mediante asignaciones.
+En pseudocódigo, los procesos se expresan mediante **asignaciones**.
+
+Una asignación es una instrucción que:
+
+* Evalúa una expresión.
+* Almacena el resultado en una variable.
+
+En este curso se utiliza el símbolo:
+
+```
+←
+```
+
+Este símbolo se lee como:
+
+> “recibe”
+
+Es importante entender que la asignación **no representa igualdad matemática**, sino almacenamiento de un valor.
+
+La forma general de una asignación es:
+
+```text
+variable ← expresión
+```
+
+Reglas para escribir una asignación:
+
+* A la izquierda debe haber **una sola variable**.
+* A la derecha puede haber:
+
+  * Un valor.
+  * Otra variable.
+  * Una expresión matemática.
+  * Una expresión relacional.
+  * Una expresión lógica.
 
 Ejemplos:
 
 ```text
 promedio ← (nota1 + nota2 + nota3) / 3
 total ← cantidad × precio
+edad ← 18
+esMayor ← edad ≥ 18
+resultado ← numero1 > numero2
 ```
 
-Primero se realiza el cálculo y luego se asigna el resultado a la variable correspondiente.
+En los últimos ejemplos, la expresión produce un valor lógico (Verdadero o Falso), que puede almacenarse en una variable de tipo lógico.
 
----
+Orden de ejecución:
+
+1. Primero se evalúa la expresión que está a la derecha.
+2. Luego el resultado se almacena en la variable que está a la izquierda.
+
 
 ## 7. Salida de datos
 
@@ -160,11 +202,11 @@ Las instrucciones se ejecutan una después de la otra, en el orden establecido.
 
 ---
 
-### 8.2 Estructura selectiva (SI)
+## 8.2 Estructura selectiva (SI)
 
 La estructura selectiva permite ejecutar diferentes instrucciones dependiendo de una condición lógica.
 
-Forma general:
+### Forma básica
 
 ```text
 SI (condición) ENTONCES
@@ -183,6 +225,25 @@ FIN SI
 ```
 
 Solo uno de los bloques se ejecuta.
+
+---
+
+### Forma extendida con múltiples condiciones
+
+Cuando se necesitan evaluar varias condiciones excluyentes, se puede utilizar la forma:
+
+```text
+SI (condición1) ENTONCES
+    instrucciones
+SINO SI (condición2) ENTONCES
+    instrucciones
+SINO
+    instrucciones
+FIN SI
+```
+
+Las condiciones se evalúan en el orden en que aparecen.
+Solo se ejecuta el bloque correspondiente a la **primera condición verdadera**.
 
 ---
 
@@ -213,6 +274,7 @@ Estas expresiones deben leerse en lenguaje natural.
 ## 10. Ejemplo completo de algoritmo
 
 ```text
+ALGORITMO
 VARIABLES
     nota COMO número real
 
