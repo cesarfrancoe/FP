@@ -89,7 +89,7 @@ VARIABLES
 
 * **Lógico (booleano)**
   Representa valores de verdad: **Verdadero** o **Falso**.
-  El tipo lógico se entiende en sentido **booleano**, no como representación binaria interna del computador.
+  El tipo lógico se entiende en sentido **booleano**, es decir, como representación de valores de verdad, y no como representación binaria interna.
 
 Estos tipos de datos se utilizan para **razonar sobre la información**, no para validar sintaxis ni estudiar representación física.
 
@@ -125,7 +125,9 @@ Una asignación es una instrucción que:
 * Evalúa una expresión.
 * Almacena el resultado en una variable.
 
-Se utiliza como símbolo una flecha que apunta hacia la izquierda:
+La asignación modifica el valor almacenado en una variable.
+
+Se utiliza como símbolo:
 
 ```
 ←
@@ -135,8 +137,7 @@ Este símbolo se lee como:
 
 > “recibe”, “guarda” o “almacena”.
 
-Se emplea este símbolo de forma generalizada en pseudocódigo porque permite diferenciar claramente la **asignación** de la **igualdad matemática**.
-El símbolo `=` se utiliza en expresiones relacionales para establecer igualdad, mientras que `←` representa una operación de almacenamiento.
+Se emplea este símbolo de forma generalizada en pseudocódigo porque permite diferenciar claramente la **asignación** de la **igualdad matemática**. El símbolo `=` se utiliza en expresiones relacionales para establecer igualdad, mientras que `←` representa una operación de almacenamiento.
 
 La forma general de una asignación es:
 
@@ -244,7 +245,7 @@ FIN SI
 Las condiciones se evalúan en el orden en que aparecen.
 Solo se ejecuta el bloque correspondiente a la **primera condición verdadera**.
 
-Cada condición debe ser mutuamente excluyente para evitar ambigüedad en la ejecución.
+Las condiciones deben ser mutuamente excluyentes para evitar ambigüedad en la ejecución.
 
 ---
 
@@ -310,7 +311,7 @@ Reglas básicas:
 
 * La expresión completa debe producir un valor lógico.
 * Las condiciones combinadas deben estar claramente delimitadas.
-* Puede utilizarse paréntesis para evitar ambigüedad.
+* Las condiciones deben ser mutuamente excluyentes para evitar ambigüedad en la ejecución.
 
 ---
 
