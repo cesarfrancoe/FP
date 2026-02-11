@@ -245,27 +245,88 @@ Solo se ejecuta el bloque correspondiente a la **primera condición verdadera**.
 
 ---
 
-## 9. Condiciones y notación lógica
+## 9. Condiciones, operadores y expresiones lógicas
 
-Las condiciones se expresan utilizando **notación matemática y lógica estándar**.
+Una **condición** es una expresión que produce un valor lógico:
+**Verdadero** o **Falso**.
+
+Las condiciones se utilizan en las estructuras selectivas.
+
+---
+
+### 9.1 Operadores relacionales
+
+Permiten comparar valores.
 
 Simbología utilizada:
 
-* `>`  mayor que
-* `<`  menor que
-* `≥`  mayor o igual que
-* `≤`  menor o igual que
-* `=`  igual a
-* `≠`  diferente de
+* `>`   mayor que
+* `<`   menor que
+* `≥`   mayor o igual que
+* `≤`   menor o igual que
+* `=`   igual a
+* `≠`   diferente de
 
 Ejemplos:
 
 ```text
 edad ≥ 18
 nota < 3.0
+numero1 = numero2
 ```
 
-Estas expresiones deben leerse en lenguaje natural.
+Una expresión relacional produce un valor lógico.
+
+---
+
+### 9.2 Operadores lógicos
+
+Permiten combinar condiciones.
+
+Operadores utilizados:
+
+* **Y**   (conjunción lógica)
+* **O**   (disyunción lógica)
+* **NO**  (negación lógica)
+
+---
+
+### 9.3 Expresiones lógicas compuestas
+
+Una expresión lógica compuesta combina dos o más condiciones mediante operadores lógicos.
+
+Ejemplos:
+
+```text
+edad ≥ 18 Y edad ≤ 60
+nota ≥ 3.0 O recuperacion = Verdadero
+NO (edad ≥ 18)
+```
+
+Reglas básicas:
+
+* La expresión completa debe producir un valor lógico.
+* Las condiciones combinadas deben estar claramente delimitadas.
+* Puede utilizarse paréntesis para evitar ambigüedad.
+
+---
+
+### 9.4 Diferencia entre asignación y comparación
+
+Es importante diferenciar:
+
+* `←`  asignación (almacena un valor).
+* `=`  comparación (evalúa igualdad).
+
+Ejemplo:
+
+```text
+edad ← 18        ← asignación
+edad = 18        ← comparación
+```
+
+La asignación no es una condición.
+La comparación sí produce un valor lógico.
 
 ---
 
