@@ -75,8 +75,6 @@ VARIABLES
 
 ### 4.2 Tipos de datos básicos
 
-En este curso se trabajarán los siguientes tipos de datos:
-
 * **Número entero**
   Valores numéricos sin parte decimal.
 
@@ -91,7 +89,7 @@ En este curso se trabajarán los siguientes tipos de datos:
 
 * **Lógico (booleano)**
   Representa valores de verdad: **Verdadero** o **Falso**.
-  En este curso, el tipo lógico se entiende en sentido **booleano**, no como representación binaria interna del computador.
+  El tipo lógico se entiende en sentido **booleano**, no como representación binaria interna del computador.
 
 Estos tipos de datos se utilizan para **razonar sobre la información**, no para validar sintaxis ni estudiar representación física.
 
@@ -127,7 +125,7 @@ Una asignación es una instrucción que:
 * Evalúa una expresión.
 * Almacena el resultado en una variable.
 
-En este curso se utiliza el símbolo:
+Se utiliza como símbolo una fecla que apunta hacia la izquierda:
 
 ```
 ←
@@ -135,7 +133,7 @@ En este curso se utiliza el símbolo:
 
 Este símbolo se lee como:
 
-> “recibe”
+> “recibe”, "guarda" o "almacena"
 
 Es importante entender que la asignación **no representa igualdad matemática**, sino almacenamiento de un valor.
 
