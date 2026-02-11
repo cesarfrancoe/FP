@@ -202,7 +202,7 @@ Las instrucciones se ejecutan una después de la otra, en el orden establecido.
 
 ---
 
-## 8.2 Estructura selectiva (SI)
+### 8.2 Estructura selectiva (SI)
 
 La estructura selectiva permite ejecutar diferentes instrucciones dependiendo de una condición lógica.
 
