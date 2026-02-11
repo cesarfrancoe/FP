@@ -6,7 +6,7 @@
 
 ## 1. Introducción
 
-El presente documento introduce el **pseudocódigo** como herramienta fundamental para el desarrollo de la lógica de programación. Su propósito es que el estudiante aprenda a **describir algoritmos de forma clara, ordenada y comprensible**, antes de trabajar con lenguajes de programación formales.
+El presente documento introduce el **pseudocódigo** como herramienta fundamental para el desarrollo de la lógica de programación. Su propósito es **describir algoritmos de forma clara, ordenada y comprensible**, antes de trabajar con lenguajes de programación formales.
 
 El enfoque del documento se centra en:
 
@@ -125,7 +125,7 @@ Una asignación es una instrucción que:
 * Evalúa una expresión.
 * Almacena el resultado en una variable.
 
-Se utiliza como símbolo una fecla que apunta hacia la izquierda:
+Se utiliza como símbolo una flecha que apunta hacia la izquierda:
 
 ```
 ←
@@ -133,10 +133,10 @@ Se utiliza como símbolo una fecla que apunta hacia la izquierda:
 
 Este símbolo se lee como:
 
-> “recibe”, "guarda" o "almacena"
+> “recibe”, “guarda” o “almacena”.
 
 Se emplea este símbolo de forma generalizada en pseudocódigo porque permite diferenciar claramente la **asignación** de la **igualdad matemática**.
-El símbolo = se utiliza en expresiones relacionales para comparar valores, mientras que ← indica que una variable almacena el resultado de una expresión.
+El símbolo `=` se utiliza en expresiones relacionales para establecer igualdad, mientras que `←` representa una operación de almacenamiento.
 
 La forma general de una asignación es:
 
@@ -244,6 +244,8 @@ FIN SI
 Las condiciones se evalúan en el orden en que aparecen.
 Solo se ejecuta el bloque correspondiente a la **primera condición verdadera**.
 
+Cada condición debe ser mutuamente excluyente para evitar ambigüedad en la ejecución.
+
 ---
 
 ## 9. Condiciones, operadores y expresiones lógicas
@@ -326,8 +328,7 @@ edad ← 18        ← asignación
 edad = 18        ← comparación
 ```
 
-La asignación no es una condición.
-La comparación sí produce un valor lógico.
+La asignación no produce un valor lógico, mientras que la comparación sí genera un resultado Verdadero o Falso.
 
 ---
 
@@ -358,5 +359,5 @@ FIN
 * Leer los datos antes de utilizarlos
 * Usar notación matemática y lógica
 * Mantener una escritura clara y ordenada
-* Recordar que el pseudocódigo **describe**, no ejecuta
+* El pseudocódigo describe la lógica de un algoritmo, no su ejecución.
 
