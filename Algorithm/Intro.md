@@ -135,7 +135,8 @@ Este símbolo se lee como:
 
 > “recibe”, "guarda" o "almacena"
 
-Es importante entender que la asignación **no representa igualdad matemática**, sino almacenamiento de un valor.
+Se emplea este símbolo de forma generalizada en pseudocódigo porque permite diferenciar claramente la **asignación** de la **igualdad matemática**.
+El símbolo = se utiliza en expresiones relacionales para comparar valores, mientras que ← indica que una variable almacena el resultado de una expresión.
 
 La forma general de una asignación es:
 
