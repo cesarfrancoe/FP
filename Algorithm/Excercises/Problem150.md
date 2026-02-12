@@ -2,7 +2,7 @@
 
 Una institución pública analiza la aprobación de contratos con proveedores teniendo en cuenta varios criterios administrativos y financieros. La aprobación no depende únicamente del valor ofertado, sino también del cumplimiento de requisitos legales y del comportamiento histórico del proveedor.
 
-Para que un contrato pueda considerarse viable, el proveedor debe tener una antigüedad mínima registrada en el sistema y no debe presentar incumplimientos activos. Además, el valor ofertado debe encontrarse dentro del presupuesto máximo asignado al proyecto. Si el valor supera el presupuesto, el contrato no puede ser aprobado.
+Para que un contrato pueda considerarse viable, el proveedor debe tener una antigüedad mínima de un año y no debe presentar incumplimientos activos. Además, el valor ofertado debe encontrarse dentro del presupuesto máximo asignado al proyecto. Si el valor supera el presupuesto, el contrato no puede ser aprobado.
 
 Cuando se cumplen las condiciones anteriores, el nivel de aprobación depende del porcentaje de cumplimiento en evaluaciones previas. Si dicho porcentaje es igual o superior al 90%, el contrato se clasifica como aprobación directa. Si el porcentaje está entre 75% y 89% inclusive, se clasifica como aprobación condicionada. Si el porcentaje es inferior a 75%, aunque no existan incumplimientos activos, el contrato debe ser rechazado.
 
