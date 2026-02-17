@@ -1,4 +1,4 @@
-# Problema 151 – Evaluación de capacidad financiera integral
+## Problema 151 – Evaluación de capacidad financiera integral
 
 Una entidad bancaria analiza la situación financiera de un solicitante antes de aprobar un crédito. En lugar de emitir únicamente una aprobación o rechazo, el sistema debe evaluar de manera independiente la capacidad de pago y el nivel de exposición financiera.
 
@@ -18,7 +18,7 @@ El algoritmo debe:
 * Emitir los mensajes correspondientes a cada indicador.
 * Indicar finalmente si el perfil es estable o presenta riesgo.
 
-# Ejemplos de prueba
+### Ejemplos de prueba
 
 ---
 
