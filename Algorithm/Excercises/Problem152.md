@@ -36,14 +36,19 @@ El algoritmo debe:
 **Ejemplo 1**
 
 Tipo de sistema: Eléctrico
+
 Energía útil: 900
+
 Energía consumida: 1000
+
 Margen de mejora potencial: 3
+
 Consumo crítico de referencia: 1200
 
 **Resultado esperado:**
 
 Eficiencia: Optimizado
+
 Consumo dentro de rango normal
 
 ---
@@ -51,14 +56,19 @@ Consumo dentro de rango normal
 **Ejemplo 2**
 
 Tipo de sistema: Térmico
+
 Energía útil: 700
+
 Energía consumida: 1000
+
 Margen de mejora potencial: 10
+
 Consumo crítico de referencia: 1200
 
 **Resultado esperado:**
 
 Eficiencia: Ineficiente
+
 Consumo dentro de rango normal
 
 ---
@@ -66,12 +76,17 @@ Consumo dentro de rango normal
 **Ejemplo 3**
 
 Tipo de sistema: Híbrido
+
 Energía útil: 850
+
 Energía consumida: 1000
+
 Margen de mejora potencial: 2
+
 Consumo crítico de referencia: 900
 
 **Resultado esperado:**
 
 Eficiencia: Eficiente estándar
+
 Consumo en nivel crítico
