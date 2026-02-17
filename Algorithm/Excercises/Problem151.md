@@ -18,6 +18,7 @@ El algoritmo debe:
 * Emitir los mensajes correspondientes a cada indicador.
 * Indicar finalmente si el perfil es estable o presenta riesgo.
 
+
 ### Ejemplos de prueba
 
 ---
