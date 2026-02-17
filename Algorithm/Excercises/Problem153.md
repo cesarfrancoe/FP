@@ -40,13 +40,17 @@ El algoritmo debe:
 **Ejemplo 1**
 
 Frecuencia cardiaca: Dentro de rango
+
 Lactato: Óptimo
+
 Hidratación: Adecuada
 
-Resultado esperado:
+**Resultado esperado:**
 
 Puntaje total: 6
+
 Nivel de recuperación: Óptima
+
 Sin advertencias
 
 ---
@@ -54,13 +58,17 @@ Sin advertencias
 **Ejemplo 2**
 
 Frecuencia cardiaca: Ligeramente elevada
+
 Lactato: Intermedio
+
 Hidratación: Adecuada
 
-Resultado esperado:
+**Resultado esperado:**
 
 Puntaje total: 4
+
 Nivel de recuperación: Parcial
+
 Sin advertencias
 
 ---
@@ -68,12 +76,16 @@ Sin advertencias
 **Ejemplo 3**
 
 Frecuencia cardiaca: Crítica
+
 Lactato: Intermedio
+
 Hidratación: Baja
 
-Resultado esperado:
+**Resultado esperado:**
 
 Puntaje total: 1
+
 Nivel de recuperación: Insuficiente
+
 Advertencia médica
 
