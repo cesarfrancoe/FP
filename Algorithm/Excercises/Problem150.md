@@ -1,4 +1,4 @@
-### Problema 150 – Evaluación de contrato de proveedor
+## Problema 150 – Evaluación de contrato de proveedor
 
 Una institución pública analiza la aprobación de contratos con proveedores teniendo en cuenta varios criterios administrativos y financieros. La aprobación no depende únicamente del valor ofertado, sino también del cumplimiento de requisitos legales y del comportamiento histórico del proveedor.
 
