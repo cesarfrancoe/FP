@@ -2,21 +2,36 @@
 
 Una entidad bancaria analiza la situación financiera de un solicitante antes de aprobar un crédito. En lugar de emitir únicamente una aprobación o rechazo, el sistema debe evaluar de manera independiente la capacidad de pago y el nivel de exposición financiera.
 
-El análisis comienza calculando el índice de carga financiera, el cual corresponde a la proporción entre la suma de la cuota estimada del nuevo crédito y las deudas actuales respecto al ingreso mensual. Este índice permite determinar si la persona mantiene una carga financiera adecuada o excesiva.
 
-De manera paralela, se evalúa el historial crediticio del solicitante, el cual se clasifica en excelente, aceptable o deficiente según el puntaje registrado.
+El análisis comienza calculando el índice de carga financiera, el cual corresponde a la proporción entre la suma de la cuota estimada del nuevo crédito y las deudas actuales respecto al ingreso mensual. Este índice se calcula como:
 
-Si el índice de carga financiera supera el límite permitido, el sistema debe indicar que existe sobreendeudamiento, independientemente del historial crediticio. Si el historial es deficiente, el sistema debe indicar riesgo crediticio alto, incluso cuando el índice de carga financiera sea adecuado.
+(cuota estimada + deudas actuales) / ingreso mensual
 
-Solo cuando ambos indicadores se encuentran dentro de los límites aceptables, el sistema puede indicar que el perfil financiero es estable.
+El índice de carga financiera se considera adecuado cuando no supera el 40% del ingreso mensual. Si el índice es superior al 40%, se clasifica como excesivo.
+
+De manera paralela, se evalúa el historial crediticio del solicitante. El historial se clasifica según el puntaje registrado de la siguiente forma:
+
+- Puntaje igual o superior a 800: Historial excelente.
+
+- Puntaje entre 650 y 799 inclusive: Historial aceptable.
+
+- Puntaje inferior a 650: Historial deficiente.
+
+Si el índice de carga financiera es excesivo, el sistema debe indicar que existe sobreendeudamiento, independientemente del historial crediticio. Si el historial es deficiente, el sistema debe indicar riesgo crediticio alto, incluso cuando el índice de carga financiera sea adecuado.
+
+Solo cuando el índice de carga financiera es adecuado y el historial no es deficiente, el sistema puede indicar que el perfil financiero es estable. En cualquier otro caso, el perfil debe clasificarse como perfil con riesgo.
 
 El algoritmo debe:
 
-* Calcular el índice de carga financiera.
-* Clasificar dicho índice como adecuado o excesivo.
-* Clasificar el historial crediticio.
-* Emitir los mensajes correspondientes a cada indicador.
-* Indicar finalmente si el perfil es estable o presenta riesgo.
+- Calcular el índice de carga financiera.
+
+- Clasificar dicho índice como adecuado o excesivo.
+
+- Clasificar el historial crediticio.
+
+- Emitir los mensajes correspondientes a cada indicador.
+
+- Determinar si el perfil financiero es estable o presenta riesgo.
 
 
 ### Ejemplos de prueba
