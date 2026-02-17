@@ -1,46 +1,81 @@
-### Problema 151 – Clasificación de riesgo crediticio personal
+# Problema 151 – Evaluación de capacidad financiera integral
 
-Una entidad bancaria analiza solicitudes de crédito personal evaluando múltiples factores relacionados con la capacidad de pago y el comportamiento financiero del solicitante. La decisión no se basa únicamente en el ingreso mensual, sino también en el nivel de endeudamiento actual, el historial de pagos y la estabilidad laboral.
+Una entidad bancaria analiza la situación financiera de un solicitante antes de aprobar un crédito. En lugar de emitir únicamente una aprobación o rechazo, el sistema debe evaluar de manera independiente la capacidad de pago y el nivel de exposición financiera.
 
-Para que una solicitud pueda considerarse viable, el ingreso mensual debe ser suficiente en relación con el valor de la cuota estimada del crédito. Además, el nivel total de deudas no debe superar un porcentaje determinado del ingreso mensual. Si cualquiera de estas condiciones básicas no se cumple, la solicitud debe ser rechazada.
+El análisis comienza calculando el índice de carga financiera, el cual corresponde a la proporción entre la suma de la cuota estimada del nuevo crédito y las deudas actuales respecto al ingreso mensual. Este índice permite determinar si la persona mantiene una carga financiera adecuada o excesiva.
 
-Cuando se cumplen las condiciones mínimas, la clasificación del riesgo depende del puntaje de historial crediticio. Si el puntaje es igual o superior a 800, el riesgo se considera bajo. Si el puntaje está entre 650 y 799 inclusive, el riesgo se considera medio. Si el puntaje es inferior a 650, el riesgo se considera alto y la solicitud debe ser rechazada.
+De manera paralela, se evalúa el historial crediticio del solicitante, el cual se clasifica en excelente, aceptable o deficiente según el puntaje registrado.
 
-Existe una condición adicional relacionada con la estabilidad laboral. Si el solicitante ha permanecido menos de un año en su empleo actual, la clasificación no puede ser de riesgo bajo, incluso si el puntaje crediticio es alto; en ese caso, la clasificación final debe ajustarse a riesgo medio.
+Si el índice de carga financiera supera el límite permitido, el sistema debe indicar que existe sobreendeudamiento, independientemente del historial crediticio. Si el historial es deficiente, el sistema debe indicar riesgo crediticio alto, incluso cuando el índice de carga financiera sea adecuado.
 
-El algoritmo debe determinar si la solicitud es rechazada o aprobada y, en caso de aprobación, indicar si el riesgo es bajo o medio.
+Solo cuando ambos indicadores se encuentran dentro de los límites aceptables, el sistema puede indicar que el perfil financiero es estable.
 
-### Ejemplos de prueba
+El algoritmo debe:
+
+* Calcular el índice de carga financiera.
+* Clasificar dicho índice como adecuado o excesivo.
+* Clasificar el historial crediticio.
+* Emitir los mensajes correspondientes a cada indicador.
+* Indicar finalmente si el perfil es estable o presenta riesgo.
+
+---
+
+# Ejemplos de prueba
 
 **Ejemplo 1**
 
-Ingreso mensual: 4.000.000
-Cuota estimada: 800.000
-Total de deudas: 1.000.000
-Puntaje crediticio: 820
-Años en empleo actual: 3
+Ingreso mensual: 5.000.000
 
-Resultado esperado:
-Aprobada – Riesgo bajo
+Cuota estimada: 800.000
+
+Deudas actuales: 700.000
+
+Puntaje crediticio: 820
+
+**Resultado esperado:**
+
+Carga financiera adecuada
+
+Historial excelente
+
+Perfil financiero estable
+
+---
 
 **Ejemplo 2**
 
 Ingreso mensual: 4.000.000
-Cuota estimada: 800.000
-Total de deudas: 1.000.000
-Puntaje crediticio: 820
-Años en empleo actual: 0
 
-Resultado esperado:
-Aprobada – Riesgo medio
+Cuota estimada: 1.200.000
+
+Deudas actuales: 900.000
+
+Puntaje crediticio: 780
+
+**Resultado esperado:**
+
+Carga financiera excesiva
+
+Historial aceptable
+
+Perfil con riesgo
+
+---
 
 **Ejemplo 3**
 
-Ingreso mensual: 3.000.000
-Cuota estimada: 1.200.000
-Total de deudas: 2.000.000
-Puntaje crediticio: 700
-Años en empleo actual: 5
+Ingreso mensual: 4.000.000
 
-Resultado esperado:
-Rechazada
+Cuota estimada: 700.000
+
+Deudas actuales: 600.000
+
+Puntaje crediticio: 600
+
+**Resultado esperado:**
+
+Carga financiera adecuada
+
+Historial deficiente
+
+Perfil con riesgo
