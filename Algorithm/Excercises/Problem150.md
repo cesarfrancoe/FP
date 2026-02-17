@@ -12,6 +12,8 @@ El algoritmo debe determinar si el contrato es rechazado, aprobado directamente 
 
 ### Ejemplos de prueba
 
+---
+
 **Ejemplo 1**
 
 Años de antigüedad: 5
@@ -20,12 +22,15 @@ Incumplimientos activos: 0
 
 Valor ofertado: 80.000.000
 
-Presupuesto máximo: 100.000.000
+Presupuesto máximo: 95.000.000
 
 Porcentaje de cumplimiento previo: 92
 
-Resultado esperado:
+**Resultado esperado:**
+
 Aprobación directa
+
+---
 
 **Ejemplo 2**
 
@@ -35,12 +40,15 @@ Incumplimientos activos: 0
 
 Valor ofertado: 70.000.000
 
-Presupuesto máximo: 100.000.000
+Presupuesto máximo: 85.000.000
 
 Porcentaje de cumplimiento previo: 95
 
-Resultado esperado:
+**Resultado esperado:**
+
 Aprobación condicionada
+
+---
 
 **Ejemplo 3**
 
@@ -50,11 +58,12 @@ Incumplimientos activos: 1
 
 Valor ofertado: 60.000.000
 
-Presupuesto máximo: 100.000.000
+Presupuesto máximo: 75.000.000
 
 Porcentaje de cumplimiento previo: 88
 
-Resultado esperado:
+**Resultado esperado:**
+
 Rechazado
 
 
