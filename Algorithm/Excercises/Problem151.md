@@ -2,7 +2,6 @@
 
 Una entidad bancaria analiza la situación financiera de un solicitante antes de aprobar un crédito. En lugar de emitir únicamente una aprobación o rechazo, el sistema debe evaluar de manera independiente la capacidad de pago y el nivel de exposición financiera.
 
-
 El análisis comienza calculando el índice de carga financiera, el cual corresponde a la proporción entre la suma de la cuota estimada del nuevo crédito y las deudas actuales respecto al ingreso mensual. Este índice se calcula como:
 
 (cuota estimada + deudas actuales) / ingreso mensual
@@ -19,7 +18,7 @@ De manera paralela, se evalúa el historial crediticio del solicitante. El histo
 
 Si el índice de carga financiera es excesivo, el sistema debe indicar que existe sobreendeudamiento, independientemente del historial crediticio. Si el historial es deficiente, el sistema debe indicar riesgo crediticio alto, incluso cuando el índice de carga financiera sea adecuado.
 
-Solo cuando el índice de carga financiera es adecuado y el historial no es deficiente, el sistema puede indicar que el perfil financiero es estable. En cualquier otro caso, el perfil debe clasificarse como perfil con riesgo.
+El perfil financiero se considera estable únicamente cuando el índice de carga financiera es adecuado y el historial crediticio es excelente o aceptable. En cualquier otro caso, el perfil debe clasificarse como perfil con riesgo.
 
 El algoritmo debe:
 
