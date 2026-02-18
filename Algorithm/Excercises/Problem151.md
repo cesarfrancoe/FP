@@ -48,11 +48,11 @@ Puntaje crediticio: 820
 
 **Resultado esperado:**
 
-Carga financiera adecuada
+Carga financiera: adecuada
 
-Historial excelente
+Historial: excelente
 
-Perfil financiero estable
+Perfil financiero: estable
 
 ---
 
@@ -68,13 +68,13 @@ Puntaje crediticio: 780
 
 **Resultado esperado:**
 
-Carga financiera excesiva
+Carga financiera: excesiva
 
-Historial aceptable
+Historial: aceptable
 
 Sobreendeudamiento
 
-Perfil con riesgo
+Perfil financiero: con riesgo
 
 ---
 
@@ -90,10 +90,10 @@ Puntaje crediticio: 600
 
 **Resultado esperado:**
 
-Carga financiera adecuada
+Carga financiera: adecuada
 
-Historial deficiente
+Historial: deficiente
 
-Riego crediticio alto
+Riego crediticio: alto
 
-Perfil con riesgo
+Perfil financiero: con riesgo
