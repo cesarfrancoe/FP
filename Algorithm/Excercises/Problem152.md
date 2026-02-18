@@ -12,9 +12,9 @@ En los sistemas térmicos, el índice mínimo aceptable es del 75%.
 
 En los sistemas híbridos, el índice mínimo aceptable es del 80%.
 
-Si el índice calculado se encuentra por debajo del mínimo correspondiente al tipo de sistema, el sistema se clasifica como ineficiente.
+Si el índice calculado se encuentra por debajo del mínimo correspondiente al tipo de sistema, el sistema se clasifica como "ineficiente".
 
-Cuando el índice cumple el mínimo exigido, el sistema puede clasificarse como eficiente estándar o eficiente optimizado. Para ello, se evalúa el margen de mejora potencial estimado por el equipo técnico.
+Cuando el índice cumple el mínimo exigido, el sistema puede clasificarse como "eficiente estándar" o "eficiente optimizado". Para ello, se evalúa el margen de mejora potencial estimado por el equipo técnico.
 
 Si el margen de mejora potencial es inferior al 5%, el sistema se considera optimizado.
 
