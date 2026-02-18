@@ -16,8 +16,7 @@ De manera paralela, se evalúa el historial crediticio del solicitante. El histo
 
 - Puntaje inferior a 650: Historial deficiente.
 
-Si el índice de carga financiera es excesivo, el sistema debe indicar que existe sobreendeudamiento, independientemente del historial crediticio. Si el historial es deficiente, el sistema debe indicar riesgo crediticio alto, incluso cuando el índice de carga financiera sea adecuado.
-
+Si el índice de carga financiera es excesivo, el sistema debe emitir el mensaje "sobreendeudamiento". Si el historial es deficiente, el sistema debe emitir el mensaje "riesgo crediticio alto". Ambos mensajes pueden emitirse de manera simultánea si se cumplen las dos condiciones.
 El perfil financiero se considera estable únicamente cuando el índice de carga financiera es adecuado y el historial crediticio es excelente o aceptable. En cualquier otro caso, el perfil debe clasificarse como perfil con riesgo.
 
 El algoritmo debe:
@@ -73,6 +72,8 @@ Carga financiera excesiva
 
 Historial aceptable
 
+Sobreendeudamiento
+
 Perfil con riesgo
 
 ---
@@ -92,5 +93,7 @@ Puntaje crediticio: 600
 Carga financiera adecuada
 
 Historial deficiente
+
+Riego crediticio alto
 
 Perfil con riesgo
