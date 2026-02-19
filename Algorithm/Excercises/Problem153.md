@@ -1,4 +1,4 @@
-**Problema 153**
+## Problema 153 – Evaluación de estado fisiológico en medicina deportiva
 
 Un centro de medicina deportiva evalúa el estado fisiológico de un atleta inmediatamente después de una sesión de entrenamiento intensivo. El propósito es determinar su nivel de recuperación a partir de tres indicadores cuantitativos medidos en el mismo momento: frecuencia cardiaca en reposo posterior al entrenamiento (en latidos por minuto), nivel de lactato en sangre (en mmol/L) y porcentaje de hidratación corporal estimado (en porcentaje).
 
@@ -54,7 +54,7 @@ El algoritmo debe:
 
 **Ejemplos de prueba**
 
-Ejemplo 1
+**Ejemplo 1**
 
 Frecuencia cardiaca: 80 lpm
 
@@ -69,7 +69,7 @@ Recuperación óptima.
 
 Sin advertencia médica.
 
-Ejemplo 2
+**Ejemplo 2**
 
 Frecuencia cardiaca: 95 lpm
 
