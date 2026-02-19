@@ -30,8 +30,11 @@ Cuando el índice cumple el mínimo exigido, el sistema puede clasificarse como 
 
 * Si el margen es igual o superior al 5%, el sistema se clasifica como eficiente estándar.
 
-Existe una condición adicional:
-En sistemas híbridos, si el consumo energético total supera un umbral crítico definido por la planta, el sistema no puede clasificarse como optimizado, incluso si el margen de mejora es bajo.
+Existe una condición adicional para sistemas híbridos:
+Si el consumo energético total supera un umbral crítico definido por la planta (es decir, Energía consumida > Consumo crítico de referencia), el sistema no puede clasificarse como “Eficiente optimizado”, incluso si su margen de mejora es menor que 5%. En ese caso se clasifica como “Eficiente estándar”.
+
+Además, el algoritmo debe indicar de forma independiente si el consumo energético se encuentra en nivel crítico, lo cual ocurre cuando:
+Energía consumida > Consumo crítico de referencia.
 
 El algoritmo debe:
 
