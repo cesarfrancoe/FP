@@ -55,31 +55,47 @@ El algoritmo debe:
 **Ejemplos de prueba**
 
 Ejemplo 1
+
 Frecuencia cardiaca: 80 lpm
+
 Lactato: 2 mmol/L
+
 Hidratación: 55%
 
 Puntajes: 2 + 2 + 2 = 6
-Resultado esperado: 
+
+**Resultado esperado:** 
 Recuperación óptima. 
+
 Sin advertencia médica.
 
 Ejemplo 2
+
 Frecuencia cardiaca: 95 lpm
+
 Lactato: 3.5 mmol/L
+
 Hidratación: 52%
 
 Puntajes: 1 + 1 + 1 = 3
-Resultado esperado: 
+
+**Resultado esperado:** 
 Recuperación parcial. 
+
 Sin advertencia médica.
 
 Ejemplo 3
+
 Frecuencia cardiaca: 102 lpm
+
 Lactato: 4.2 mmol/L
+
 Hidratación: 49%
 
 Puntajes: 0 + 0 + 0 = 0
-Resultado esperado: 
+
+**Resultado esperado:** 
+
 Recuperación insuficiente. 
+
 Con advertencia médica.
