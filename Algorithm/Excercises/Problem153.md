@@ -1,91 +1,85 @@
-## Problema 153 – Evaluación de estado fisiológico en medicina deportiva
+**Problema 153**
 
-Un centro de medicina deportiva analiza el estado fisiológico de un atleta luego de una sesión de entrenamiento intensivo. El objetivo no es determinar una única categoría final, sino construir un perfil de recuperación basado en múltiples indicadores biométricos.
+Un centro de medicina deportiva evalúa el estado fisiológico de un atleta inmediatamente después de una sesión de entrenamiento intensivo. El propósito es determinar su nivel de recuperación a partir de tres indicadores cuantitativos medidos en el mismo momento: frecuencia cardiaca en reposo posterior al entrenamiento (en latidos por minuto), nivel de lactato en sangre (en mmol/L) y porcentaje de hidratación corporal estimado (en porcentaje).
 
-Se registran tres valores principales:
+Todos los valores registrados se consideran números reales no negativos.
 
-* Frecuencia cardiaca en reposo posterior al entrenamiento.
-* Nivel de lactato en sangre.
-* Porcentaje de hidratación corporal estimado.
+Cada indicador se clasifica en uno de tres niveles mutuamente excluyentes y exhaustivos. A cada nivel se le asigna un puntaje. El puntaje total de recuperación corresponde a la suma de los puntos obtenidos en los tres indicadores.
 
-Cada indicador se compara con su rango recomendado. Sin embargo, en lugar de clasificar cada uno de forma aislada, el sistema asigna un puntaje de recuperación según el comportamiento de cada parámetro.
+**1. Frecuencia cardiaca (lpm)**
 
-Si la frecuencia cardiaca se encuentra dentro del rango recomendado, se asignan 2 puntos; si se encuentra ligeramente elevada, se asigna 1 punto; si supera significativamente el límite, no se asignan puntos.
+* Si 0 ≤ frecuencia ≤ 80, se considera dentro del rango recomendado y aporta 2 puntos.
+* Si 80 < frecuencia ≤ 95, se considera ligeramente elevada y aporta 1 punto.
+* Si frecuencia > 95, se considera en nivel crítico y aporta 0 puntos.
 
-El nivel de lactato aporta 2 puntos cuando está dentro del rango óptimo, 1 punto cuando se encuentra en nivel intermedio y 0 puntos cuando supera el límite máximo recomendado.
+**2. Nivel de lactato (mmol/L)**
 
-El porcentaje de hidratación aporta 2 puntos si es adecuado, 1 punto si está levemente por debajo del valor recomendado y 0 puntos si indica deshidratación marcada.
+* Si 0 ≤ lactato ≤ 2, se considera óptimo y aporta 2 puntos.
+* Si 2 < lactato ≤ 4, se considera intermedio y aporta 1 punto.
+* Si lactato > 4, se considera en nivel crítico y aporta 0 puntos.
 
-Al finalizar la evaluación, se calcula el puntaje total de recuperación.
+**3. Porcentaje de hidratación (%)**
 
-* Si el puntaje total es 6, la recuperación se considera óptima.
-* Si el puntaje está entre 3 y 5 inclusive, la recuperación se considera parcial.
-* Si el puntaje es inferior a 3, la recuperación se considera insuficiente.
+* Si hidratación ≥ 55, se considera adecuada y aporta 2 puntos.
+* Si 50 ≤ hidratación < 55, se considera leve déficit y aporta 1 punto.
+* Si 0 ≤ hidratación < 50, se considera deshidratación marcada y aporta 0 puntos.
 
-Además, si cualquiera de los tres indicadores se encuentra en nivel crítico (es decir, en su peor estado), el sistema debe emitir una advertencia médica independiente del puntaje total.
+Los intervalos definidos no se superponen y cubren completamente todos los valores posibles dentro del dominio válido (valores reales no negativos).
+
+El puntaje total posible está entre 0 y 6 inclusive.
+
+El nivel global de recuperación se determina así:
+
+* Si puntaje total = 6, la recuperación es óptima.
+* Si 3 ≤ puntaje total ≤ 5, la recuperación es parcial.
+* Si puntaje total < 3, la recuperación es insuficiente.
+
+Adicionalmente, se debe emitir una advertencia médica si al menos uno de los tres indicadores se encuentra en nivel crítico. Un indicador está en nivel crítico si y solo si:
+
+* frecuencia > 95, o
+* lactato > 4, o
+* hidratación < 50.
+
+La advertencia médica es independiente del nivel global de recuperación y debe mostrarse incluso si el puntaje total corresponde a recuperación parcial o insuficiente.
 
 El algoritmo debe:
 
-* Evaluar cada indicador.
-* Asignar los puntos correspondientes.
+* Evaluar cada indicador según los intervalos definidos.
+* Calcular el puntaje individual de cada indicador.
 * Calcular el puntaje total.
 * Determinar el nivel de recuperación.
-* Emitir advertencia cuando corresponda.
-
-
-### Ejemplos de prueba
+* Determinar si corresponde emitir advertencia médica.
 
 ---
 
-**Ejemplo 1**
+**Ejemplos de prueba**
 
-Frecuencia cardiaca: Dentro de rango
+Ejemplo 1
+Frecuencia cardiaca: 80 lpm
+Lactato: 2 mmol/L
+Hidratación: 55%
 
-Lactato: Óptimo
+Puntajes: 2 + 2 + 2 = 6
+Resultado esperado: 
+Recuperación óptima. 
+Sin advertencia médica.
 
-Hidratación: Adecuada
+Ejemplo 2
+Frecuencia cardiaca: 95 lpm
+Lactato: 3.5 mmol/L
+Hidratación: 52%
 
-**Resultado esperado:**
+Puntajes: 1 + 1 + 1 = 3
+Resultado esperado: 
+Recuperación parcial. 
+Sin advertencia médica.
 
-Puntaje total: 6
+Ejemplo 3
+Frecuencia cardiaca: 102 lpm
+Lactato: 4.2 mmol/L
+Hidratación: 49%
 
-Nivel de recuperación: Óptima
-
-Sin advertencias
-
----
-
-**Ejemplo 2**
-
-Frecuencia cardiaca: Ligeramente elevada
-
-Lactato: Intermedio
-
-Hidratación: Adecuada
-
-**Resultado esperado:**
-
-Puntaje total: 4
-
-Nivel de recuperación: Parcial
-
-Sin advertencias
-
----
-
-**Ejemplo 3**
-
-Frecuencia cardiaca: Crítica
-
-Lactato: Intermedio
-
-Hidratación: Baja
-
-**Resultado esperado:**
-
-Puntaje total: 1
-
-Nivel de recuperación: Insuficiente
-
-Advertencia médica
-
+Puntajes: 0 + 0 + 0 = 0
+Resultado esperado: 
+Recuperación insuficiente. 
+Con advertencia médica.
