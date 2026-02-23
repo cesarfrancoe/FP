@@ -51,7 +51,7 @@ El algoritmo debe:
 
 Tipo de sistema: Eléctrico
 
-Energía útil: 900
+Energía útil: 970
 
 Energía consumida: 1000
 
