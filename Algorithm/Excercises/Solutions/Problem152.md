@@ -1,3 +1,5 @@
+```text
+
 ALGORITMO
 
 VARIABLES
@@ -60,3 +62,5 @@ INICIO
     ESCRIBIR estadoConsumo
 
 FIN
+
+```
