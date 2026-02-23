@@ -1,3 +1,4 @@
+```text
 ALGORITMO
 
 VARIABLES
@@ -60,3 +61,4 @@ INICIO
     ESCRIBIR "Perfil financiero: ", perfilFinanciero
 
 FIN
+```
