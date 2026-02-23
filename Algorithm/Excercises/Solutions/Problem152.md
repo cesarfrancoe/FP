@@ -13,9 +13,16 @@ VARIABLES
 
 INICIO
 
+    ESCRIBIR "Ingrese el tipo de sistema (Eléctrico, Térmico o Híbrido): "
     LEER tipoSistema
+
+    ESCRIBIR "Ingrese la energía útil generada: "
     LEER energiaUtil
+
+    ESCRIBIR "Ingrese la energía total consumida: "
     LEER energiaConsumida
+
+    ESCRIBIR "Ingrese el consumo crítico de referencia: "
     LEER consumoCriticoReferencia
 
     indiceEficiencia ← (energiaUtil / energiaConsumida) × 100
