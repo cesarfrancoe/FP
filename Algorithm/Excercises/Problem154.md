@@ -1,4 +1,4 @@
-### Problema 153 – Evaluación de viabilidad de lote agrícola
+### Problema 154 – Evaluación de viabilidad de lote agrícola
 
 Un ingeniero agrónomo debe determinar si un lote de terreno es apto para la siembra de un cultivo específico. La decisión no depende únicamente del tipo de suelo, sino también del nivel de acidez, la disponibilidad de agua y la altitud sobre el nivel del mar.
 
