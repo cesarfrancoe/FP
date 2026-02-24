@@ -84,7 +84,7 @@ Recuperación parcial.
 
 Sin advertencia médica.
 
-Ejemplo 3
+**Ejemplo 3**
 
 Frecuencia cardiaca: 102 lpm
 
@@ -95,7 +95,6 @@ Hidratación: 49%
 Puntajes: 0 + 0 + 0 = 0
 
 **Resultado esperado:** 
-
 Recuperación insuficiente. 
 
 Con advertencia médica.
