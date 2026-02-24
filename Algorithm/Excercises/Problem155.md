@@ -11,15 +11,15 @@ El sistema recibe como datos de entrada suministrados por el usuario:
 * Variabilidad luminosa: “Baja”, “Media” o “Alta” (solo si el objeto es Estrella).
 * Tiempo efectivo de exposición en segundos (valor real).
 
-Todos los valores son ingresados directamente. El algoritmo no utiliza estructuras iterativas; únicamente aplica cálculos intermedios y estructuras selectivas.
+Todos los valores son ingresados directamente por el usuario.
 
-La evaluación se realiza mediante un sistema de puntaje acumulativo. Cada parámetro relevante aporta un puntaje según los siguientes criterios.
+### Sistema de puntaje
 
 Magnitud aparente:
 
-* Si 0 ≤ magnitud ≤ 6 → aporta 2 puntos.
-* Si 6 < magnitud ≤ 8 → aporta 1 punto.
-* Si magnitud > 8 → aporta 0 puntos.
+* 0 ≤ magnitud ≤ 6 → 2 puntos.
+* 6 < magnitud ≤ 8 → 1 punto.
+* magnitud > 8 → 0 puntos.
 
 Interferencia lumínica:
 
@@ -29,49 +29,49 @@ Interferencia lumínica:
 
 Parámetro específico según el tipo de objeto:
 
-Para Planeta (se evalúa estabilidad atmosférica):
+Planeta (se evalúa estabilidad atmosférica):
 
 * Alta → 2 puntos.
 * Media → 1 punto.
 * Baja → 0 puntos.
 
-Para Estrella (se evalúa variabilidad luminosa):
+Estrella (se evalúa variabilidad luminosa):
 
 * Baja → 2 puntos.
 * Media → 1 punto.
 * Alta → 0 puntos.
 
-Para Galaxia (se evalúa tiempo de exposición):
+Galaxia (se evalúa tiempo de exposición como parámetro principal):
 
 * Tiempo ≥ 120 segundos → 2 puntos.
 * 80 ≤ tiempo < 120 → 1 punto.
 * Tiempo < 80 → 0 puntos.
 
-El puntaje total corresponde a la suma de:
+---
+
+### Clasificación final
+
+El puntaje total es la suma de:
 
 * Puntaje por magnitud.
 * Puntaje por interferencia.
 * Puntaje del parámetro específico según el tipo.
 
-El puntaje máximo posible es 6.
+Puntaje máximo posible: 6.
 
-La clasificación final de la observación se determina así:
+* 5 o 6 → “Observación de alta calidad”.
+* 3 o 4 → “Observación de calidad media”.
+* 0, 1 o 2 → “Observación inválida”.
 
-* Si el puntaje total es 5 o 6 → “Observación de alta calidad”.
-* Si el puntaje total es 3 o 4 → “Observación de calidad media”.
-* Si el puntaje total es 0, 1 o 2 → “Observación inválida”.
+### Advertencia adicional por tiempo insuficiente
 
-Advertencia adicional:
+Independientemente de la clasificación anterior, el sistema debe emitir una advertencia si el tiempo de exposición es inferior al mínimo recomendado para el tipo:
 
-Independientemente de la clasificación anterior, el sistema debe emitir una advertencia si el tiempo efectivo de exposición es inferior al mínimo recomendado para el tipo de objeto:
+* Planeta: tiempo < 90 segundos.
+* Estrella: tiempo < 100 segundos.
+* Galaxia: tiempo < 80 segundos.
 
-* Planeta: mínimo 90 segundos.
-* Estrella: mínimo 100 segundos.
-* Galaxia: mínimo 80 segundos.
-
-La advertencia no modifica la clasificación; solo indica que los datos podrían ser insuficientes para análisis posterior.
-
----
+La advertencia no modifica la clasificación.
 
 ### Ejemplos de prueba
 
