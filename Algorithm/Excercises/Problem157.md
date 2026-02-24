@@ -1,4 +1,4 @@
-### Problema 157 – Evaluación de observación astronómica
+### Problema 155 – Evaluación de observación astronómica
 
 Un observatorio astronómico analiza datos registrados durante una sesión de observación nocturna para determinar la calidad de los registros obtenidos y la viabilidad de continuar con el estudio del objeto celeste.
 
@@ -52,4 +52,3 @@ Resultado esperado:
 Observación inválida
 
 
-Si quieres, el siguiente puede ser en ingeniería o computación, incorporando dependencias aún más estrictas entre entradas.
