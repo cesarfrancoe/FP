@@ -95,6 +95,7 @@ Cálculo:
   Puntaje total = 6
 
 **Resultado esperado:**
+
 Observación de alta calidad
 
 **Ejemplo 2**
@@ -115,6 +116,7 @@ Cálculo:
   Puntaje total = 2
 
 **Resultado esperado:**
+
 Observación inválida
 
 Advertencia: tiempo de exposición insuficiente
@@ -139,4 +141,5 @@ Cálculo:
   Puntaje total = 0
 
 **Resultado esperado:**
+
 Observación inválida
