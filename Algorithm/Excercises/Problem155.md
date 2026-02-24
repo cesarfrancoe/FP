@@ -87,37 +87,25 @@ Interferencia lumínica: Baja
 
 Tiempo de exposición: 120
 
-Cálculo:
-
-* Magnitud 3.5 → 2 puntos
-* Interferencia baja → 2 puntos
-* Variabilidad baja → 2 puntos
-  Puntaje total = 6
-
 **Resultado esperado:**
 
 Observación de alta calidad
+
+(Sin advertencia)
 
 **Ejemplo 2**
 
 Tipo de objeto: Galaxia
 
-Magnitud aparente: 7.0
+Magnitud aparente: 6.5
 
 Interferencia lumínica: Media
 
 Tiempo de exposición: 85
 
-Cálculo:
-
-* Magnitud 7.0 → 1 punto
-* Interferencia media → 1 punto
-* Tiempo 70 → 0 puntos
-  Puntaje total = 2
-
 **Resultado esperado:**
 
-Observación inválida
+Observación de calidad media
 
 Advertencia: tiempo de exposición insuficiente
 
@@ -133,13 +121,8 @@ Interferencia lumínica: Alta
 
 Tiempo de exposición: 100
 
-Cálculo:
-
-* Magnitud 8.5 → 0 puntos
-* Interferencia alta → 0 puntos
-* Estabilidad baja → 0 puntos
-  Puntaje total = 0
-
 **Resultado esperado:**
 
 Observación inválida
+
+(Sin advertencia)
