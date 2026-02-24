@@ -22,7 +22,7 @@ La materia orgánica no puede convertir un lote “No apto” en viable ni en ó
 
 El algoritmo debe determinar si el lote es “No apto para la siembra”, “Viable con manejo técnico adicional” u “Óptimo para la siembra”.
 
-##Ejemplos de prueba##
+## Ejemplos de prueba ##
 
 **Ejemplo 1**
 pH: 6.5
