@@ -35,12 +35,15 @@ Clasificar a una persona según su edad y determinar si puede ingresar a un even
 ## Valores de prueba
 
 edad = 22
+
 tieneBoleta = 1
 
 Resultado esperado:
 
 estadoEdad = "Mayor de edad"
+
 categoria = "Adulto"
+
 puedeIngresar = "Autorizado"
 
 ---
