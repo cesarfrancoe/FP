@@ -13,52 +13,52 @@ VARIABLES
 
 INICIO
 
-    ESCRIBIR "Ingrese el ingreso mensual: "
-    LEER ingresoMensual
+1     ESCRIBIR "Ingrese el ingreso mensual: "
+2     LEER ingresoMensual
 
-    ESCRIBIR "Ingrese el valor de la cuota estimada: "
-    LEER cuotaEstimada
+3     ESCRIBIR "Ingrese el valor de la cuota estimada: "
+4     LEER cuotaEstimada
 
-    ESCRIBIR "Ingrese el total de deudas actuales: "
-    LEER deudasActuales
+5     ESCRIBIR "Ingrese el total de deudas actuales: "
+6     LEER deudasActuales
 
-    ESCRIBIR "Ingrese el puntaje crediticio: "
-    LEER puntajeCrediticio
+7     ESCRIBIR "Ingrese el puntaje crediticio: "
+8     LEER puntajeCrediticio
 
-    indiceCarga ← (cuotaEstimada + deudasActuales) / ingresoMensual
+9     indiceCarga ← (cuotaEstimada + deudasActuales) / ingresoMensual
 
-    SI (indiceCarga ≤ 0.40) ENTONCES
-        estadoCarga ← "Adecuada"
-    SINO
-        estadoCarga ← "Excesiva"
-    FIN SI
+10    SI (indiceCarga ≤ 0.40) ENTONCES
+11        estadoCarga ← "Adecuada"
+12    SINO
+13        estadoCarga ← "Excesiva"
+14    FIN SI
 
-    SI (puntajeCrediticio ≥ 800) ENTONCES
-        estadoHistorial ← "Excelente"
-    SINO SI (puntajeCrediticio ≥ 650 Y puntajeCrediticio ≤ 799) ENTONCES
-        estadoHistorial ← "Aceptable"
-    SINO
-        estadoHistorial ← "Deficiente"
-    FIN SI
+15    SI (puntajeCrediticio ≥ 800) ENTONCES
+16        estadoHistorial ← "Excelente"
+17    SINO SI (puntajeCrediticio ≥ 650 Y puntajeCrediticio ≤ 799) ENTONCES
+18        estadoHistorial ← "Aceptable"
+19    SINO
+20        estadoHistorial ← "Deficiente"
+21    FIN SI
 
-    SI (estadoCarga = "Excesiva") ENTONCES
-        ESCRIBIR "Sobreendeudamiento"
-    FIN SI
+22    SI (estadoCarga = "Excesiva") ENTONCES
+23        ESCRIBIR "Sobreendeudamiento"
+24    FIN SI
 
-    SI (estadoHistorial = "Deficiente") ENTONCES
-        ESCRIBIR "Riesgo crediticio alto"
-    FIN SI
+25    SI (estadoHistorial = "Deficiente") ENTONCES
+26        ESCRIBIR "Riesgo crediticio alto"
+27    FIN SI
 
-    SI (estadoCarga = "Adecuada" Y (estadoHistorial = "Excelente" O estadoHistorial = "Aceptable")) ENTONCES
-        perfilFinanciero ← "Estable"
-    SINO
-        perfilFinanciero ← "Con riesgo"
-    FIN SI
+28    SI (estadoCarga = "Adecuada" Y (estadoHistorial = "Excelente" O estadoHistorial = "Aceptable")) ENTONCES
+29        perfilFinanciero ← "Estable"
+30    SINO
+31        perfilFinanciero ← "Con riesgo"
+32    FIN SI
 
-    ESCRIBIR "Índice de carga financiera: ", indiceCarga
-    ESCRIBIR "Carga financiera: ", estadoCarga
-    ESCRIBIR "Historial crediticio: ", estadoHistorial
-    ESCRIBIR "Perfil financiero: ", perfilFinanciero
+33    ESCRIBIR "Índice de carga financiera: ", indiceCarga
+34    ESCRIBIR "Carga financiera: ", estadoCarga
+35    ESCRIBIR "Historial crediticio: ", estadoHistorial
+36    ESCRIBIR "Perfil financiero: ", perfilFinanciero
 
 FIN
 ```
