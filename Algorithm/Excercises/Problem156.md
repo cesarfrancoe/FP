@@ -15,3 +15,65 @@ Adicionalmente, si el bowl incluye pollo o tofu, se considera que contiene prote
 Finalmente, si el usuario selecciona menos de tres complementos, el bowl se considera no válido y el sistema debe mostrar el siguiente mensaje: “Bowl no válido: debe seleccionar exactamente 3 complementos para construir el bowl”. En este caso, no se deben mostrar ni las calorías totales ni la clasificación nutricional ni mensajes adicionales.
 
 El algoritmo debe mostrar los resultados correspondientes según la validez del bowl y las condiciones descritas.
+
+---
+
+### Ejemplos de prueba
+
+**Ejemplo 1**
+
+Base: arroz
+Tipo de arroz: verde
+
+Pollo: si (plancha)
+Tofu: no
+Aguacate: si
+Maíz: si
+→ Ya se han seleccionado 3 complementos, no se pregunta por tomate
+
+Cálculo:
+180 + 150 + 100 + 80 = 510
+
+Resultado esperado:
+Calorías totales: 510
+Clasificación: Bowl energético
+Proteína principal: Sí
+
+---
+
+**Ejemplo 2**
+
+Base: quinoa
+Tipo de quinoa: tradicional
+
+Pollo: no
+Tofu: no
+Aguacate: si
+Maíz: si
+Tomate: si
+
+Cálculo:
+180 + 100 + 80 + 30 = 390
+
+Resultado esperado:
+Calorías totales: 390
+Clasificación: Bowl balanceado
+Proteína principal: No
+Advertencia: el bowl no contiene proteína principal
+
+---
+
+**Ejemplo 3**
+
+Base: lechuga
+
+Pollo: no
+Tofu: si (natural)
+Aguacate: no
+Maíz: no
+Tomate: no
+
+→ Solo se seleccionó 1 complemento
+
+Resultado esperado:
+Bowl no válido: debe seleccionar exactamente 3 complementos para construir el bowl
