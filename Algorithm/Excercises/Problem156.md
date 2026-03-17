@@ -22,8 +22,8 @@ El algoritmo debe mostrar los resultados correspondientes según la validez del 
 
 **Ejemplo 1**
 
-Base: arroz
-Tipo de arroz: verde
+Base: arroz 
+Tipo de arroz: verde 
 
 Pollo: si (plancha)
 Tofu: no
