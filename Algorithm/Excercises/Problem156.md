@@ -34,46 +34,46 @@ Maíz: si
 Cálculo:
 180 + 150 + 100 + 80 = 510
 
-Resultado esperado:
-Calorías totales: 510
-Clasificación: Bowl energético
-Proteína principal: Sí
+Resultado esperado:  
+Calorías totales: 510  
+Clasificación: Bowl energético  
+Proteína principal: Sí  
 
 ---
 
 **Ejemplo 2**
 
-Base: quinoa
-Tipo de quinoa: tradicional
+Base: quinoa  
+Tipo de quinoa: tradicional  
 
-Pollo: no
-Tofu: no
-Aguacate: si
-Maíz: si
-Tomate: si
+Pollo: no  
+Tofu: no  
+Aguacate: si  
+Maíz: si  
+Tomate: si  
 
-Cálculo:
+Cálculo:  
 180 + 100 + 80 + 30 = 390
 
-Resultado esperado:
-Calorías totales: 390
-Clasificación: Bowl balanceado
-Proteína principal: No
+Resultado esperado:  
+Calorías totales: 390  
+Clasificación: Bowl balanceado  
+Proteína principal: No  
 Advertencia: el bowl no contiene proteína principal
 
 ---
 
 **Ejemplo 3**
 
-Base: lechuga
+Base: lechuga  
 
-Pollo: no
-Tofu: si (natural)
-Aguacate: no
-Maíz: no
-Tomate: no
+Pollo: no  
+Tofu: si (natural)  
+Aguacate: no  
+Maíz: no  
+Tomate: no  
 
-→ Solo se seleccionó 1 complemento
+→ Solo se seleccionó 1 complemento  
 
-Resultado esperado:
+Resultado esperado:  
 Bowl no válido: debe seleccionar exactamente 3 complementos para construir el bowl
