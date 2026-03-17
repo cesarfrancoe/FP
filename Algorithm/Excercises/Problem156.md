@@ -22,13 +22,13 @@ El algoritmo debe mostrar los resultados correspondientes según la validez del 
 
 **Ejemplo 1**
 
-Base: arroz 
-Tipo de arroz: verde 
+Base: arroz  
+Tipo de arroz: verde  
 
-Pollo: si (plancha)
-Tofu: no
-Aguacate: si
-Maíz: si
+Pollo: si (plancha)  
+Tofu: no  
+Aguacate: si  
+Maíz: si  
 → Ya se han seleccionado 3 complementos, no se pregunta por tomate
 
 Cálculo:
