@@ -126,18 +126,25 @@ VARIABLES
 
 INICIO
     HACER
-        ESCRIBIR "1. Registrar"
-        ESCRIBIR "2. Consultar"
-        ESCRIBIR "3. Salir"
-        ESCRIBIR "Seleccione una opción:"
-        LEER opcion
+        HACER
+            ESCRIBIR "1. Registrar"
+            ESCRIBIR "2. Consultar"
+            ESCRIBIR "3. Salir"
+            ESCRIBIR "Seleccione una opción:"
+            LEER opcion
+    
+            SI (opcion < 1 O opcion > 3) ENTONCES
+                ESCRIBIR "Error: opción inválida"
+            FIN_SI
+        REPETIR HACER MIENTRAS QUE (opcion < 1 O opcion > 3)
 
-        SI (opcion < 1 O opcion > 3) ENTONCES
-            ESCRIBIR "Error: opción inválida"
-        FIN SI
-    REPETIR HACER MIENTRAS QUE (opcion < 1 O opcion > 3)
-
-    ESCRIBIR "Opción válida"
+        SI (opcion = 1) ENTONCES
+            ESCRIBIR "Ralizar tarea de registrar..."
+        SINO SI (opcion = 2) ENTONCES
+            ESCRIBIR "Realizar tarea de consultar..."
+        FIN_SI
+        
+    REPETIR HACE MIENTRAS QUE (opcion ≠ 3)
 FIN
 ```
 
