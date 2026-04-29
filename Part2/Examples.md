@@ -24,7 +24,7 @@ INICIO
     HACER
         ESCRIBIR contador
         contador ← contador + 1
-    REPETIR HACER MIENTRAS (contador ≤ 5)
+    REPETIR HACER MIENTRAS QUE (contador ≤ 5)
 FIN
 ```
 
@@ -50,7 +50,7 @@ INICIO
     HACER
         suma ← suma + contador
         contador ← contador + 1
-    REPETIR HACER (contador ≤ 5)
+    REPETIR HACER MIENTRAS QUE (contador ≤ 5)
 
     ESCRIBIR "Suma total:"
     ESCRIBIR suma
@@ -79,7 +79,7 @@ INICIO
         SI (numero ≤ 0) ENTONCES
             ESCRIBIR "Error: el número debe ser mayor que cero"
         FIN SI
-    REPETIR HACER (numero ≤ 0)
+    REPETIR HACER MIENTRAS QUE (numero ≤ 0)
 
     ESCRIBIR "Número válido:"
     ESCRIBIR numero
@@ -104,7 +104,7 @@ INICIO
         SI (numero < 10 O numero > 20) ENTONCES
             ESCRIBIR "Error: el número debe estar entre 10 y 20"
         FIN SI
-    REPETIR HACER (numero < 10 O numero > 20)
+    REPETIR HACER MIENTRAS QUE (numero < 10 O numero > 20)
 
     ESCRIBIR "Número válido"
 FIN
@@ -135,7 +135,7 @@ INICIO
         SI (opcion < 1 O opcion > 3) ENTONCES
             ESCRIBIR "Error: opción inválida"
         FIN SI
-    REPETIR HACER (opcion < 1 O opcion > 3)
+    REPETIR HACER MIENTRAS QUE (opcion < 1 O opcion > 3)
 
     ESCRIBIR "Opción válida"
 FIN
@@ -166,7 +166,7 @@ INICIO
         SI (numero ≠ 0) ENTONCES
             suma ← suma + numero
         FIN SI
-    REPETIR HACER (numero ≠ 0)
+    REPETIR HACER MIENTRAS QUE (numero ≠ 0)
 
     ESCRIBIR "Suma total:"
     ESCRIBIR suma
@@ -200,7 +200,7 @@ INICIO
                 contadorPares ← contadorPares + 1
             FIN SI
         FIN SI
-    REPETIR HACER (numero ≠ -1)
+    REPETIR HACER MIENTRAS QUE (numero ≠ -1)
 
     ESCRIBIR "Cantidad de números pares:"
     ESCRIBIR contadorPares
@@ -229,6 +229,6 @@ INICIO
         resultado ← 3 * contador
         ESCRIBIR "3 x ", contador, " = ", resultado
         contador ← contador + 1
-    REPETIR HACER (contador ≤ 10)
+    REPETIR HACER MIENTRAS QUE (contador ≤ 10)
 FIN
 ```
