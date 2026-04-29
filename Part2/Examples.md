@@ -1,4 +1,4 @@
-**Guía de Ejemplos: Uso de la Estructura HACER…REPETIR HACER**
+# **Guía de Ejemplos: Uso de la Estructura HACER…REPETIR HACER**
 
 La presente guía reúne una serie de ejemplos clásicos y progresivos orientados a comprender el uso de la estructura iterativa *HACER…REPETIR HACER*. Cada 
 ejemplo ha sido diseñado para ilustrar un patrón específico de aplicación, como el conteo, la acumulación, la validación de datos, el uso de valores centinela y 
