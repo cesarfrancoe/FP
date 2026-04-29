@@ -24,7 +24,7 @@ INICIO
     HACER
         ESCRIBIR contador
         contador ← contador + 1
-    REPETIR HACER (contador ≤ 5)
+    REPETIR HACER MIENTRAS (contador ≤ 5)
 FIN
 ```
 
